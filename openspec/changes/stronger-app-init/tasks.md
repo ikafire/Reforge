@@ -1,10 +1,10 @@
 ## 1. Project Setup
 
-- [ ] 1.1 Create new Android project with Kotlin, Compose, min SDK 29
+- [x] 1.1 Create new Android project with Kotlin, Compose, min SDK 29
 - [ ] 1.2 Configure multi-module Gradle structure (:app, :core:*, :feature:*)
-- [ ] 1.3 Add core dependencies (Hilt, Room, Compose Navigation, kotlinx.datetime, kotlinx.serialization)
-- [ ] 1.4 Set up Material Design 3 theme with dark/light support
-- [ ] 1.5 Create base Application class with Hilt setup
+- [x] 1.3 Add core dependencies (Hilt, Room, Compose Navigation, kotlinx.datetime, kotlinx.serialization)
+- [x] 1.4 Set up Material Design 3 theme with dark/light support
+- [x] 1.5 Create base Application class with Hilt setup
 
 ## 2. Core Infrastructure
 
@@ -24,7 +24,7 @@
 
 ## 3. MVP: App Shell & Navigation
 
-- [ ] 3.1 Implement MainActivity with Compose content
+- [x] 3.1 Implement MainActivity with Compose content
 - [ ] 3.2 Implement bottom navigation bar (Profile, History, Workout, Exercises, Measure tabs)
 - [ ] 3.3 Set up Compose Navigation with type-safe routes
 - [ ] 3.4 Implement tab state preservation
