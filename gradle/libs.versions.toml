@@ -19,6 +19,9 @@ room = "2.6.1"
 hilt = "2.51.1"
 hilt-navigation-compose = "1.2.0"
 
+# DataStore
+datastore = "1.1.1"
+
 # Charts
 vico = "2.0.0-beta.1"
 
@@ -63,6 +66,9 @@ room-testing = { group = "androidx.room", name = "room-testing", version.ref = "
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+
+# DataStore
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 
 # Charts
 vico-compose-m3 = { group = "com.patrykandpatrick.vico", name = "compose-m3", version.ref = "vico" }

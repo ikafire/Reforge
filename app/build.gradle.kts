@@ -48,6 +48,20 @@ android {
 }
 
 dependencies {
+    // Modules
+    implementation(project(":core:common"))
+    implementation(project(":core:domain"))
+    implementation(project(":core:database"))
+    implementation(project(":core:data"))
+    implementation(project(":core:ui"))
+    implementation(project(":feature:exercises"))
+    implementation(project(":feature:workout"))
+    implementation(project(":feature:history"))
+    implementation(project(":feature:profile"))
+    implementation(project(":feature:analytics"))
+    implementation(project(":feature:measure"))
+    implementation(project(":feature:settings"))
+
     // Kotlin
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.datetime)

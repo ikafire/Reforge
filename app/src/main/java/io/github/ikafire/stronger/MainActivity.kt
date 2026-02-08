@@ -4,27 +4,56 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Box
+import androidx.activity.viewModels
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.NavDestination.Companion.hasRoute
+import androidx.navigation.NavDestination.Companion.hierarchy
+import androidx.navigation.NavGraph.Companion.findStartDestination
+import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
-import io.github.ikafire.stronger.ui.theme.StrongerTheme
+import io.github.ikafire.stronger.core.domain.model.ThemeMode
+import io.github.ikafire.stronger.core.ui.theme.StrongerTheme
+import io.github.ikafire.stronger.navigation.ExercisesRoute
+import io.github.ikafire.stronger.navigation.HistoryRoute
+import io.github.ikafire.stronger.navigation.MeasureRoute
+import io.github.ikafire.stronger.navigation.ProfileRoute
+import io.github.ikafire.stronger.navigation.SettingsRoute
+import io.github.ikafire.stronger.navigation.StrongerNavHost
+import io.github.ikafire.stronger.navigation.TopLevelDestination
+import io.github.ikafire.stronger.navigation.WorkoutRoute
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    private val viewModel: MainViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            StrongerTheme {
+            val themeMode by viewModel.themeMode.collectAsStateWithLifecycle()
+
+            val darkTheme = when (themeMode) {
+                ThemeMode.SYSTEM -> isSystemInDarkTheme()
+                ThemeMode.LIGHT -> false
+                ThemeMode.DARK -> true
+            }
+
+            StrongerTheme(darkTheme = darkTheme) {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -38,25 +67,59 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun StrongerApp() {
-    Scaffold { innerPadding ->
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(innerPadding),
-            contentAlignment = Alignment.Center
-        ) {
-            Text(
-                text = "Stronger",
-                style = MaterialTheme.typography.headlineLarge
-            )
-        }
-    }
-}
+    val navController = rememberNavController()
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentDestination = navBackStackEntry?.destination
 
-@Preview(showBackground = true)
-@Composable
-fun StrongerAppPreview() {
-    StrongerTheme {
-        StrongerApp()
+    val showBottomBar = currentDestination?.hasRoute<SettingsRoute>() != true
+
+    Scaffold(
+        bottomBar = {
+            if (showBottomBar) {
+                NavigationBar {
+                    TopLevelDestination.entries.forEach { destination ->
+                        val route = when (destination) {
+                            TopLevelDestination.PROFILE -> ProfileRoute
+                            TopLevelDestination.HISTORY -> HistoryRoute
+                            TopLevelDestination.WORKOUT -> WorkoutRoute
+                            TopLevelDestination.EXERCISES -> ExercisesRoute
+                            TopLevelDestination.MEASURE -> MeasureRoute
+                        }
+
+                        val selected = currentDestination?.hierarchy?.any {
+                            it.hasRoute(route::class)
+                        } == true
+
+                        NavigationBarItem(
+                            selected = selected,
+                            onClick = {
+                                navController.navigate(route) {
+                                    popUpTo(navController.graph.findStartDestination().id) {
+                                        saveState = true
+                                    }
+                                    launchSingleTop = true
+                                    restoreState = true
+                                }
+                            },
+                            icon = {
+                                Icon(
+                                    imageVector = if (selected) destination.selectedIcon else destination.unselectedIcon,
+                                    contentDescription = destination.label,
+                                )
+                            },
+                            label = { Text(destination.label) },
+                        )
+                    }
+                }
+            }
+        },
+    ) { innerPadding ->
+        StrongerNavHost(
+            navController = navController,
+            onNavigateToSettings = {
+                navController.navigate(SettingsRoute)
+            },
+            modifier = Modifier.padding(innerPadding),
+        )
     }
 }

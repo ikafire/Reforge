@@ -1,4 +1,4 @@
-package io.github.ikafire.stronger.ui.theme
+package io.github.ikafire.stronger.core.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -10,11 +10,6 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-
-// Primary orange color matching Strong app
-private val Orange = Color(0xFFFF6B35)
-private val OrangeLight = Color(0xFFFF8A5C)
-private val OrangeDark = Color(0xFFE55A2B)
 
 private val DarkColorScheme = darkColorScheme(
     primary = Orange,
@@ -49,7 +44,7 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun StrongerTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = false, // Disabled to use our brand colors
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

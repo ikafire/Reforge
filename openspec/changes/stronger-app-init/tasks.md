@@ -1,31 +1,31 @@
 ## 1. Project Setup
 
 - [x] 1.1 Create new Android project with Kotlin, Compose, min SDK 29
-- [ ] 1.2 Configure multi-module Gradle structure (:app, :core:*, :feature:*)
+- [x] 1.2 Configure multi-module Gradle structure (:app, :core:*, :feature:*)
 - [x] 1.3 Add core dependencies (Hilt, Room, Compose Navigation, kotlinx.datetime, kotlinx.serialization)
 - [x] 1.4 Set up Material Design 3 theme with dark/light support
 - [x] 1.5 Create base Application class with Hilt setup
-- [ ] 1.6 ✓ VALIDATE: Project builds and launches on emulator
+- [x] 1.6 ✓ VALIDATE: Project builds and launches on emulator
   - Run: `./gradlew assembleDebug lintDebug`
   - Run: `adb shell am start -n io.github.ikafire.stronger/.MainActivity`
   - Verify: App launches without crash, shows "Stronger" text
 
 ## 2. Core Infrastructure
 
-- [ ] 2.1 Create :core:common module (pure Kotlin utilities, constants)
-- [ ] 2.2 Create :core:domain module (pure Kotlin models, repository interfaces, use case base)
-- [ ] 2.3 Create :core:database module with Room setup and database class
-- [ ] 2.4 Define Exercise entity (id, name, category, primaryMuscle, secondaryMuscles, instructions, isCustom, resistanceProfile, createdAt)
-- [ ] 2.5 Define ResistanceProfile embedded class (type, multiplier, notes)
-- [ ] 2.6 Define Workout entity (id, templateId, startedAt, finishedAt, notes, isActive)
-- [ ] 2.7 Define WorkoutExercise entity (id, workoutId, exerciseId, sortOrder, supersetGroup, notes)
-- [ ] 2.8 Define WorkoutSet entity (id, workoutExerciseId, sortOrder, type, weight, reps, distance, duration, rpe, effectiveWeight, isCompleted, completedAt)
-- [ ] 2.9 Define WorkoutTemplate entity (id, name, folderId, sortOrder)
-- [ ] 2.10 Define TemplateFolder entity (id, name, sortOrder)
-- [ ] 2.11 Define TemplateExercise entity (id, templateId, exerciseId, sortOrder, targetSets, targetReps, supersetGroup)
-- [ ] 2.12 Create :core:data module with repository implementations
-- [ ] 2.13 Create :core:ui module with shared composables and theme
-- [ ] 2.14 ✓ VALIDATE: All modules build, Room schema compiles
+- [x] 2.1 Create :core:common module (pure Kotlin utilities, constants)
+- [x] 2.2 Create :core:domain module (pure Kotlin models, repository interfaces, use case base)
+- [x] 2.3 Create :core:database module with Room setup and database class
+- [x] 2.4 Define Exercise entity (id, name, category, primaryMuscle, secondaryMuscles, instructions, isCustom, resistanceProfile, createdAt)
+- [x] 2.5 Define ResistanceProfile embedded class (type, multiplier, notes)
+- [x] 2.6 Define Workout entity (id, templateId, startedAt, finishedAt, notes, isActive)
+- [x] 2.7 Define WorkoutExercise entity (id, workoutId, exerciseId, sortOrder, supersetGroup, notes)
+- [x] 2.8 Define WorkoutSet entity (id, workoutExerciseId, sortOrder, type, weight, reps, distance, duration, rpe, effectiveWeight, isCompleted, completedAt)
+- [x] 2.9 Define WorkoutTemplate entity (id, name, folderId, sortOrder)
+- [x] 2.10 Define TemplateFolder entity (id, name, sortOrder)
+- [x] 2.11 Define TemplateExercise entity (id, templateId, exerciseId, sortOrder, targetSets, targetReps, supersetGroup)
+- [x] 2.12 Create :core:data module with repository implementations
+- [x] 2.13 Create :core:ui module with shared composables and theme
+- [x] 2.14 ✓ VALIDATE: All modules build, Room schema compiles
   - Run: `./gradlew :core:database:assembleDebug :core:database:kspDebugKotlin`
   - Run: `./gradlew :core:database:connectedAndroidTest` (Room DAO tests)
   - Tests: ExerciseDaoTest, WorkoutDaoTest, WorkoutSetDaoTest
@@ -34,15 +34,15 @@
 ## 3. MVP: App Shell & Navigation
 
 - [x] 3.1 Implement MainActivity with Compose content
-- [ ] 3.2 Implement bottom navigation bar (Profile, History, Workout, Exercises, Measure tabs)
-- [ ] 3.3 Set up Compose Navigation with type-safe routes
-- [ ] 3.4 Implement tab state preservation
-- [ ] 3.5 Create placeholder screens for all 5 tabs
-- [ ] 3.6 Add settings navigation from Profile tab (gear icon)
-- [ ] 3.7 Implement settings screen skeleton (Units, Theme sections)
-- [ ] 3.8 Implement theme switching (Dark/Light/System)
-- [ ] 3.9 Implement unit preference setting (kg/lbs, cm/in)
-- [ ] 3.10 ✓ VALIDATE: App Shell meets specs/app-shell/spec.md
+- [x] 3.2 Implement bottom navigation bar (Profile, History, Workout, Exercises, Measure tabs)
+- [x] 3.3 Set up Compose Navigation with type-safe routes
+- [x] 3.4 Implement tab state preservation
+- [x] 3.5 Create placeholder screens for all 5 tabs
+- [x] 3.6 Add settings navigation from Profile tab (gear icon)
+- [x] 3.7 Implement settings screen skeleton (Units, Theme sections)
+- [x] 3.8 Implement theme switching (Dark/Light/System)
+- [x] 3.9 Implement unit preference setting (kg/lbs, cm/in)
+- [x] 3.10 ✓ VALIDATE: App Shell meets specs/app-shell/spec.md
   - Run: `./gradlew :app:connectedAndroidTest --tests "*.AppShellTest*"`
   - Spec: Bottom navigation - "Navigate between tabs" scenario
   - Spec: Bottom navigation - "Preserve tab state" scenario
