@@ -1,0 +1,29 @@
+# Kotlin / Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+.gradle/
+build/
+local.properties
+*.iml
+
+# Android Studio / IntelliJ
+.idea/
+*.hprof
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.jks
+*.keystore
+google-services.json
+.reference_data
