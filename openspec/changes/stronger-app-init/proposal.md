@@ -20,6 +20,7 @@ This is a greenfield Android app. All capabilities are new.
 - Data import from Strong (CSV) and export to CSV
 - SQLite database backup/restore via Google Drive
 - Dark/light theme (Material Design 3)
+- HTML mockups for UI/UX design review before implementing each screen
 
 ## Capabilities
 
@@ -27,14 +28,14 @@ This is a greenfield Android app. All capabilities are new.
 
 - `workout-logging`: Core workout session lifecycle — start, log sets, supersets, notes, finish/discard. The primary UX loop.
 - `exercise-library`: Bundled exercise database, custom exercise creation (unlimited), exercise metadata (muscles, equipment, instructions), effective resistance profiles.
-- `templates`: Workout templates (unlimited), template folders, create/edit/delete/duplicate/reorder, start workout from template.
+- `templates`: Workout templates (unlimited), template folders, create/edit/delete/duplicate/reorder, template preview, start workout from template. Templates live within the Workout tab.
 - `analytics`: Per-exercise charts (1RM, volume, best set), PR detection and records, muscle heat map, body part volume distribution.
-- `body-tracking`: Bodyweight, body fat, arbitrary body measurements logging with history and charts.
+- `body-tracking`: Bodyweight, body fat, caloric intake, arbitrary body measurements (shoulders, biceps, forearms, etc.) logging with history and charts. Displayed in the "Measure" tab.
 - `history`: Workout history list and calendar view, per-workout summaries, search and filtering.
 - `timer`: Auto rest timer on set completion, per-exercise timer configuration, notification with inline set logging.
 - `tools`: Plate calculator (configurable bar weight), warm-up calculator, unit conversion (imperial/metric with retroactive conversion).
 - `data-sync`: SQLite file backup/restore to Google Drive, Strong CSV import, CSV export.
-- `app-shell`: App navigation, theme (Material Design 3, dark/light), settings, onboarding.
+- `app-shell`: App navigation (Profile | History | Workout | Exercises | Measure tabs), Profile tab with dashboard (workouts/week chart), theme (Material Design 3, dark/light), settings, onboarding.
 
 ### Modified Capabilities
 
