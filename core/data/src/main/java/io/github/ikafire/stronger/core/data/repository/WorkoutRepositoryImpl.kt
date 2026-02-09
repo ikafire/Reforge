@@ -39,8 +39,13 @@ class WorkoutRepositoryImpl @Inject constructor(
         workoutDao.insertWorkout(workout.toEntity())
 
     override suspend fun finishWorkout(workoutId: String) {
-        val entity = workoutDao.getWorkoutById(workoutId)
-        // Update handled via the update path
+        val entity = workoutDao.getWorkoutByIdSync(workoutId) ?: return
+        workoutDao.updateWorkout(
+            entity.copy(
+                isActive = false,
+                finishedAt = Clock.System.now().toEpochMilliseconds(),
+            )
+        )
     }
 
     override suspend fun discardWorkout(workoutId: String) =

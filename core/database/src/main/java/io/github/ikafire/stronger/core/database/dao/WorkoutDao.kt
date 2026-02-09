@@ -31,4 +31,7 @@ interface WorkoutDao {
 
     @Query("DELETE FROM workouts WHERE id = :id")
     suspend fun deleteWorkout(id: String)
+
+    @Query("SELECT * FROM workouts WHERE id = :id")
+    suspend fun getWorkoutByIdSync(id: String): WorkoutEntity?
 }

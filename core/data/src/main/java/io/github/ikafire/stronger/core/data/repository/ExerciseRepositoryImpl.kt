@@ -5,6 +5,7 @@ import io.github.ikafire.stronger.core.data.mapper.toEntity
 import io.github.ikafire.stronger.core.database.dao.ExerciseDao
 import io.github.ikafire.stronger.core.domain.model.Exercise
 import io.github.ikafire.stronger.core.domain.model.ExerciseCategory
+import io.github.ikafire.stronger.core.domain.model.ExerciseWithUsage
 import io.github.ikafire.stronger.core.domain.model.MuscleGroup
 import io.github.ikafire.stronger.core.domain.repository.ExerciseRepository
 import kotlinx.coroutines.flow.Flow
@@ -17,6 +18,11 @@ class ExerciseRepositoryImpl @Inject constructor(
 
     override fun getAllExercises(): Flow<List<Exercise>> =
         exerciseDao.getAllExercises().map { list -> list.map { it.toDomain() } }
+
+    override fun getAllExercisesWithUsageCount(): Flow<List<ExerciseWithUsage>> =
+        exerciseDao.getAllExercisesWithUsageCount().map { list ->
+            list.map { ExerciseWithUsage(it.exercise.toDomain(), it.usageCount) }
+        }
 
     override fun getExerciseById(id: String): Flow<Exercise?> =
         exerciseDao.getExerciseById(id).map { it?.toDomain() }
@@ -33,9 +39,15 @@ class ExerciseRepositoryImpl @Inject constructor(
     override suspend fun insertExercise(exercise: Exercise) =
         exerciseDao.insertExercise(exercise.toEntity())
 
+    override suspend fun insertExercises(exercises: List<Exercise>) =
+        exerciseDao.insertExercises(exercises.map { it.toEntity() })
+
     override suspend fun updateExercise(exercise: Exercise) =
         exerciseDao.updateExercise(exercise.toEntity())
 
     override suspend fun deleteExercise(id: String) =
         exerciseDao.deleteExercise(id)
+
+    override suspend fun getExerciseCount(): Int =
+        exerciseDao.getExerciseCount()
 }

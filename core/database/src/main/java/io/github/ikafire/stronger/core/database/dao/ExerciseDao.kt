@@ -6,6 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import io.github.ikafire.stronger.core.database.entity.ExerciseEntity
+import io.github.ikafire.stronger.core.database.entity.ExerciseWithUsageCount
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -40,4 +41,17 @@ interface ExerciseDao {
 
     @Query("SELECT COUNT(*) FROM exercises")
     suspend fun getExerciseCount(): Int
+
+    @Query("""
+        SELECT e.*, COALESCE(usage.count, 0) as usageCount
+        FROM exercises e
+        LEFT JOIN (
+            SELECT we.exerciseId, COUNT(DISTINCT we.workoutId) as count
+            FROM workout_exercises we
+            INNER JOIN workouts w ON w.id = we.workoutId AND w.isActive = 0
+            GROUP BY we.exerciseId
+        ) usage ON usage.exerciseId = e.id
+        ORDER BY usageCount DESC, e.name ASC
+    """)
+    fun getAllExercisesWithUsageCount(): Flow<List<ExerciseWithUsageCount>>
 }

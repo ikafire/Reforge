@@ -35,6 +35,7 @@ dependencies {
     implementation(project(":core:domain"))
     implementation(project(":core:data"))
     implementation(project(":core:ui"))
+    implementation(project(":feature:exercises"))
 
     implementation(platform(libs.compose.bom))
     implementation(libs.bundles.compose)

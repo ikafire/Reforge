@@ -25,4 +25,14 @@ interface WorkoutSetDao {
 
     @Query("DELETE FROM workout_sets WHERE id = :id")
     suspend fun deleteSet(id: String)
+
+    @Query("""
+        SELECT ws.* FROM workout_sets ws
+        INNER JOIN workout_exercises we ON we.id = ws.workoutExerciseId
+        INNER JOIN workouts w ON w.id = we.workoutId AND w.isActive = 0
+        WHERE we.exerciseId = :exerciseId
+        AND ws.isCompleted = 1
+        ORDER BY w.startedAt DESC, ws.sortOrder ASC
+    """)
+    suspend fun getPreviousSetsForExercise(exerciseId: String): List<WorkoutSetEntity>
 }

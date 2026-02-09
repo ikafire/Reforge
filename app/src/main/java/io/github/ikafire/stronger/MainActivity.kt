@@ -27,6 +27,10 @@ import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 import io.github.ikafire.stronger.core.domain.model.ThemeMode
 import io.github.ikafire.stronger.core.ui.theme.StrongerTheme
+import io.github.ikafire.stronger.navigation.ActiveWorkoutRoute
+import io.github.ikafire.stronger.navigation.CreateExerciseRoute
+import io.github.ikafire.stronger.navigation.EditExerciseRoute
+import io.github.ikafire.stronger.navigation.ExerciseDetailRoute
 import io.github.ikafire.stronger.navigation.ExercisesRoute
 import io.github.ikafire.stronger.navigation.HistoryRoute
 import io.github.ikafire.stronger.navigation.MeasureRoute
@@ -71,7 +75,13 @@ fun StrongerApp() {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
 
-    val showBottomBar = currentDestination?.hasRoute<SettingsRoute>() != true
+    val showBottomBar = currentDestination?.let { dest ->
+        dest.hasRoute<SettingsRoute>() != true &&
+            dest.hasRoute<ExerciseDetailRoute>() != true &&
+            dest.hasRoute<CreateExerciseRoute>() != true &&
+            dest.hasRoute<EditExerciseRoute>() != true &&
+            dest.hasRoute<ActiveWorkoutRoute>() != true
+    } ?: true
 
     Scaffold(
         bottomBar = {

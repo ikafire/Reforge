@@ -58,21 +58,21 @@
 
 ## 4. MVP: Exercise Library
 
-- [ ] 4.1 Create :feature:exercises module
-- [ ] 4.2 Create bundled exercises JSON asset file (~200+ exercises)
-- [ ] 4.3 Implement first-launch exercise database seeding
-- [ ] 4.4 Create ExerciseDao with CRUD operations and Flow queries
-- [ ] 4.5 Create ExerciseRepository with domain models
-- [ ] 4.6 Implement ExerciseListScreen with usage frequency grouping (50+, 26-50, 11-25, 1-10, Never used)
-- [ ] 4.7 Implement exercise search by name
-- [ ] 4.8 Implement equipment category filter
-- [ ] 4.9 Implement muscle group filter
-- [ ] 4.10 Implement ExerciseDetailScreen with About tab (name, equipment, muscles, instructions)
-- [ ] 4.11 Implement create custom exercise flow (unlimited)
-- [ ] 4.12 Implement edit/delete custom exercise
-- [ ] 4.13 Implement resistance profile configuration (direct, angle, lever, pulley, custom multiplier)
-- [ ] 4.14 Implement exercise picker dialog (for adding exercises to workouts/templates)
-- [ ] 4.15 ✓ VALIDATE: Exercise Library meets specs/exercise-library/spec.md
+- [x] 4.1 Create :feature:exercises module
+- [x] 4.2 Create bundled exercises JSON asset file (~200+ exercises)
+- [x] 4.3 Implement first-launch exercise database seeding
+- [x] 4.4 Create ExerciseDao with CRUD operations and Flow queries
+- [x] 4.5 Create ExerciseRepository with domain models
+- [x] 4.6 Implement ExerciseListScreen with usage frequency grouping (50+, 26-50, 11-25, 1-10, Never used)
+- [x] 4.7 Implement exercise search by name
+- [x] 4.8 Implement equipment category filter
+- [x] 4.9 Implement muscle group filter
+- [x] 4.10 Implement ExerciseDetailScreen with About tab (name, equipment, muscles, instructions)
+- [x] 4.11 Implement create custom exercise flow (unlimited)
+- [x] 4.12 Implement edit/delete custom exercise
+- [x] 4.13 Implement resistance profile configuration (direct, angle, lever, pulley, custom multiplier)
+- [x] 4.14 Implement exercise picker dialog (for adding exercises to workouts/templates)
+- [x] 4.15 ✓ VALIDATE: Exercise Library meets specs/exercise-library/spec.md
   - Run: `./gradlew :feature:exercises:connectedAndroidTest`
   - Spec: Bundled exercise library - "First launch" scenario
   - Spec: Exercise list grouped by usage frequency scenarios
@@ -92,37 +92,37 @@
 
 ## 5. MVP: Workout Logging
 
-- [ ] 5.1 Create :feature:workout module
-- [ ] 5.2 Create WorkoutDao, WorkoutExerciseDao, WorkoutSetDao
-- [ ] 5.3 Create WorkoutRepository with domain models and use cases
-- [ ] 5.4 Implement WorkoutHomeScreen (Quick start + Template browser)
-- [ ] 5.5 Implement "Start Empty Workout" flow
-- [ ] 5.6 Implement active workout persistence (survives app kill/restart)
-- [ ] 5.7 Implement ActiveWorkoutScreen with duration timer
-- [ ] 5.8 Implement add exercise to active workout
-- [ ] 5.9 Implement set logging table (SET | PREVIOUS | weight | REPS | checkmark columns)
-- [ ] 5.10 Implement weight column header adaptation (+KG/+LBS for weighted bodyweight)
-- [ ] 5.11 Implement pre-fill weight/reps from previous workout
-- [ ] 5.12 Implement set completion (tap checkmark to complete)
-- [ ] 5.13 Implement set type tagging (warm-up, working, failure, drop)
-- [ ] 5.14 Implement add/remove sets
-- [ ] 5.15 Implement total reps badge per exercise
-- [ ] 5.16 Implement rest timer divider display between sets
-- [ ] 5.17 Implement in-app rest timer banner (auto-start on set completion)
-- [ ] 5.18 Implement timer controls (+30s, -30s, skip)
-- [ ] 5.19 Implement superset creation and visual grouping (orange border)
-- [ ] 5.20 Implement superset logging flow (scroll to next exercise in group)
-- [ ] 5.21 Implement exercise reorder via drag-and-drop
-- [ ] 5.22 Implement remove exercise (with confirmation if sets logged)
-- [ ] 5.23 Implement workout notes (workout-level)
-- [ ] 5.24 Implement exercise notes
-- [ ] 5.25 Implement finish workout flow (save to history)
-- [ ] 5.26 Implement finish with incomplete sets prompt
-- [ ] 5.27 Implement discard workout with confirmation
-- [ ] 5.28 Implement only-one-active-workout enforcement
-- [ ] 5.29 Implement RPE input (6.0-10.0) per set
-- [ ] 5.30 Implement effectiveWeight computation on set completion
-- [ ] 5.31 ✓ VALIDATE: Workout Logging meets specs/workout-logging/spec.md
+- [x] 5.1 Create :feature:workout module
+- [x] 5.2 Create WorkoutDao, WorkoutExerciseDao, WorkoutSetDao
+- [x] 5.3 Create WorkoutRepository with domain models and use cases
+- [x] 5.4 Implement WorkoutHomeScreen (Quick start + Template browser)
+- [x] 5.5 Implement "Start Empty Workout" flow
+- [x] 5.6 Implement active workout persistence (survives app kill/restart)
+- [x] 5.7 Implement ActiveWorkoutScreen with duration timer
+- [x] 5.8 Implement add exercise to active workout
+- [x] 5.9 Implement set logging table (SET | PREVIOUS | weight | REPS | checkmark columns)
+- [x] 5.10 Implement weight column header adaptation (+KG/+LBS for weighted bodyweight)
+- [x] 5.11 Implement pre-fill weight/reps from previous workout
+- [x] 5.12 Implement set completion (tap checkmark to complete)
+- [x] 5.13 Implement set type tagging (warm-up, working, failure, drop)
+- [x] 5.14 Implement add/remove sets
+- [x] 5.15 Implement total reps badge per exercise
+- [x] 5.16 Implement rest timer divider display between sets
+- [x] 5.17 Implement in-app rest timer banner (auto-start on set completion)
+- [x] 5.18 Implement timer controls (+30s, -30s, skip)
+- [x] 5.19 Implement superset creation and visual grouping (orange border)
+- [x] 5.20 Implement superset logging flow (scroll to next exercise in group)
+- [x] 5.21 Implement exercise reorder via drag-and-drop
+- [x] 5.22 Implement remove exercise (with confirmation if sets logged)
+- [x] 5.23 Implement workout notes (workout-level)
+- [x] 5.24 Implement exercise notes
+- [x] 5.25 Implement finish workout flow (save to history)
+- [x] 5.26 Implement finish with incomplete sets prompt
+- [x] 5.27 Implement discard workout with confirmation
+- [x] 5.28 Implement only-one-active-workout enforcement
+- [x] 5.29 Implement RPE input (6.0-10.0) per set
+- [x] 5.30 Implement effectiveWeight computation on set completion
+- [x] 5.31 ✓ VALIDATE: Workout Logging meets specs/workout-logging/spec.md
   - Run: `./gradlew :feature:workout:connectedAndroidTest`
   - Spec: Start a workout from scratch - "Start empty workout" scenario
   - Spec: Only one active workout at a time - "Attempt to start while active" scenario
@@ -377,3 +377,4 @@
     - OnboardingFlowTest: first launch → onboarding displayed, collect preferences
     - OnboardingSkipTest: dismiss → defaults applied (metric), lands on Workout tab
     - OnboardingImportTest: select import → file picker for Strong CSV
+- [ ] 15.7 print "FINISHED" after completing every task

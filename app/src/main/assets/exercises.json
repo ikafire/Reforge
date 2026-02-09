@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "name": "Bench Press (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Lie on a flat bench, grip the barbell slightly wider than shoulder width, lower to chest, and press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000002",
+    "name": "Incline Bench Press (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Set bench to 30-45 degrees, grip barbell slightly wider than shoulder width, lower to upper chest, and press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "name": "Decline Bench Press (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Lie on a decline bench, grip the barbell slightly wider than shoulder width, lower to lower chest, and press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000004",
+    "name": "Close Grip Bench Press (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": ["CHEST", "SHOULDERS"],
+    "instructions": "Lie on a flat bench, grip the barbell at shoulder width or narrower, lower to chest, and press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000005",
+    "name": "Squat (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS", "CORE"],
+    "instructions": "Place barbell on upper back, feet shoulder width apart, squat down until thighs are parallel to the floor, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000006",
+    "name": "Front Squat (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "CORE"],
+    "instructions": "Rest barbell on front delts with elbows high, squat down until thighs are parallel, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000007",
+    "name": "Deadlift (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["HAMSTRINGS", "GLUTES", "CORE", "FOREARMS"],
+    "instructions": "Stand with feet hip width apart, hinge at hips, grip the bar, and lift by driving through the floor and extending hips."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000008",
+    "name": "Romanian Deadlift (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": ["GLUTES", "BACK", "CORE"],
+    "instructions": "Hold barbell at hip level, hinge at hips with slight knee bend, lower bar along legs until stretch is felt in hamstrings, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000009",
+    "name": "Sumo Deadlift (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["QUADS", "HAMSTRINGS", "BACK", "ADDUCTORS"],
+    "instructions": "Take a wide stance with toes pointed out, grip bar inside knees, and lift by driving through the floor."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000010",
+    "name": "Overhead Press (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS", "CORE"],
+    "instructions": "Stand with barbell at shoulder height, press overhead until arms are locked out, then lower back to shoulders."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000011",
+    "name": "Bent Over Row (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS", "CORE"],
+    "instructions": "Hinge at hips with slight knee bend, pull barbell to lower chest, squeeze shoulder blades, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000012",
+    "name": "Pendlay Row (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Hinge forward until torso is parallel to the floor, pull barbell from floor to lower chest explosively, then lower back to floor."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000013",
+    "name": "Barbell Curl (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Stand with barbell at arm's length, curl the weight up by flexing elbows, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000014",
+    "name": "EZ Bar Curl (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Grip the EZ bar on the angled portions, curl the weight up while keeping elbows stationary, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000015",
+    "name": "Skull Crusher (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Lie on bench, hold barbell above chest with arms extended, lower to forehead by bending elbows, then extend back up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000016",
+    "name": "Hip Thrust (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["HAMSTRINGS", "CORE"],
+    "instructions": "Sit on the floor with upper back against a bench, roll barbell over hips, drive hips up squeezing glutes at the top."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000017",
+    "name": "Barbell Shrug (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "TRAPS",
+    "secondaryMuscles": [],
+    "instructions": "Hold barbell at arm's length, shrug shoulders straight up toward ears, hold briefly, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000018",
+    "name": "Barbell Lunge (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Place barbell on upper back, step forward into a lunge until both knees are at 90 degrees, then push back to start."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000019",
+    "name": "Barbell Calf Raise (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "CALVES",
+    "secondaryMuscles": [],
+    "instructions": "Place barbell on upper back, stand on a raised surface with heels hanging off, raise up on toes, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000020",
+    "name": "Rack Pull (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS", "TRAPS"],
+    "instructions": "Set barbell at knee height in a rack, grip the bar, and lift by extending hips and standing tall."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000021",
+    "name": "Barbell Good Morning (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": ["GLUTES", "BACK", "CORE"],
+    "instructions": "Place barbell on upper back, hinge at hips with slight knee bend until torso is near parallel, then return to standing."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000022",
+    "name": "Floor Press (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Lie on the floor under a barbell, press the bar up from the rack, lower until triceps touch the floor, then press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000023",
+    "name": "Push Press (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS", "QUADS", "CORE"],
+    "instructions": "Hold barbell at shoulders, dip knees slightly, then explosively drive the bar overhead using leg drive."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000024",
+    "name": "Upright Row (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRAPS", "BICEPS"],
+    "instructions": "Hold barbell with a narrow grip, pull the bar up along the body to chin height leading with elbows, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000025",
+    "name": "Barbell Reverse Curl (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "FOREARMS",
+    "secondaryMuscles": ["BICEPS"],
+    "instructions": "Grip barbell with palms facing down, curl the weight up keeping elbows stationary, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000026",
+    "name": "Dumbbell Bench Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Lie on a flat bench holding dumbbells at chest level, press up until arms are extended, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000027",
+    "name": "Incline Dumbbell Bench Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Set bench to 30-45 degrees, press dumbbells from chest level to full extension overhead."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000028",
+    "name": "Decline Dumbbell Bench Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Lie on a decline bench, press dumbbells from chest level to full extension, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000029",
+    "name": "Dumbbell Fly (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Lie on a flat bench, hold dumbbells above chest with slight elbow bend, lower arms out to sides, then bring back together."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000030",
+    "name": "Incline Dumbbell Fly (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Set bench to 30-45 degrees, hold dumbbells above with slight elbow bend, open arms wide, then bring back together."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000031",
+    "name": "Dumbbell Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Stand holding dumbbells at sides, curl weights up by flexing elbows, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000032",
+    "name": "Hammer Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Hold dumbbells with palms facing each other, curl up keeping neutral grip throughout, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000033",
+    "name": "Incline Dumbbell Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Sit on an incline bench, let arms hang, curl dumbbells up with a supinated grip, then lower with full stretch."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000034",
+    "name": "Concentration Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Sit on a bench, brace elbow against inner thigh, curl dumbbell up focusing on peak contraction, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000035",
+    "name": "Lateral Raise (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": [],
+    "instructions": "Stand holding dumbbells at sides, raise arms out to sides until parallel to floor, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000036",
+    "name": "Front Raise (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": [],
+    "instructions": "Stand holding dumbbells in front of thighs, raise one or both arms forward to shoulder height, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000037",
+    "name": "Dumbbell Shoulder Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS"],
+    "instructions": "Sit or stand with dumbbells at shoulder height, press overhead until arms are extended, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000038",
+    "name": "Arnold Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS"],
+    "instructions": "Start with dumbbells in front at shoulder height palms facing you, rotate palms outward as you press overhead."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000039",
+    "name": "Dumbbell Reverse Fly (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["BACK", "TRAPS"],
+    "instructions": "Bend forward at hips, hold dumbbells below chest, raise arms out to sides squeezing rear delts, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000040",
+    "name": "Dumbbell Row (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Place one hand and knee on a bench, row dumbbell to hip with the other arm, squeeze back, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000041",
+    "name": "Dumbbell Pullover (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["LATS", "TRICEPS"],
+    "instructions": "Lie on bench, hold one dumbbell overhead with both hands, lower behind head in an arc, then pull back over chest."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000042",
+    "name": "Dumbbell Tricep Extension (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Hold one dumbbell overhead with both hands, lower behind head by bending elbows, then extend back up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000043",
+    "name": "Dumbbell Kickback (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Hinge forward, hold upper arm parallel to floor, extend forearm back until arm is straight, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000044",
+    "name": "Goblet Squat (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "CORE"],
+    "instructions": "Hold a dumbbell at chest level, squat down keeping torso upright until thighs are parallel, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000045",
+    "name": "Dumbbell Lunge (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Hold dumbbells at sides, step forward into a lunge until both knees are at 90 degrees, then push back to start."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000046",
+    "name": "Dumbbell Bulgarian Split Squat (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Hold dumbbells, place rear foot on a bench, lower until front thigh is parallel to floor, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000047",
+    "name": "Dumbbell Romanian Deadlift (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": ["GLUTES", "BACK"],
+    "instructions": "Hold dumbbells in front, hinge at hips with slight knee bend, lower along legs until stretch is felt, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000048",
+    "name": "Dumbbell Step Up (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Hold dumbbells at sides, step up onto a box or bench driving through the heel, then step down."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000049",
+    "name": "Dumbbell Calf Raise (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CALVES",
+    "secondaryMuscles": [],
+    "instructions": "Hold dumbbells at sides, stand on a raised surface with heels off the edge, raise up on toes, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000050",
+    "name": "Dumbbell Shrug (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "TRAPS",
+    "secondaryMuscles": [],
+    "instructions": "Hold dumbbells at sides, shrug shoulders straight up toward ears, hold briefly, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000051",
+    "name": "Dumbbell Wrist Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "FOREARMS",
+    "secondaryMuscles": [],
+    "instructions": "Sit with forearms on thighs palms up, curl the dumbbells up using only wrist movement, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000052",
+    "name": "Dumbbell Reverse Wrist Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "FOREARMS",
+    "secondaryMuscles": [],
+    "instructions": "Sit with forearms on thighs palms down, extend wrists upward curling the dumbbells, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000053",
+    "name": "Dumbbell Hip Thrust (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["HAMSTRINGS"],
+    "instructions": "Sit with upper back against a bench, place a dumbbell on hips, drive hips up squeezing glutes, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000054",
+    "name": "Dumbbell Upright Row (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRAPS"],
+    "instructions": "Hold dumbbells in front of thighs, pull up along the body leading with elbows to chin height, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000055",
+    "name": "Dumbbell Chest Supported Row (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Lie face down on an incline bench, row dumbbells up to sides squeezing shoulder blades together, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000056",
+    "name": "Dumbbell Floor Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Lie on the floor, press dumbbells up from chest level, lower until triceps touch the floor, then press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000057",
+    "name": "Dumbbell Lateral Lunge (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "ADDUCTORS"],
+    "instructions": "Hold dumbbells at sides, step out to one side bending that knee while keeping the other leg straight, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000058",
+    "name": "Dumbbell Skull Crusher (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Lie on bench, hold dumbbells above chest, lower toward forehead by bending elbows, then extend back up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000059",
+    "name": "Renegade Row (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["CORE", "BICEPS"],
+    "instructions": "Start in push-up position on dumbbells, row one dumbbell to hip while stabilizing with the other arm, alternate."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000060",
+    "name": "Dumbbell Thruster (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "FULL_BODY",
+    "secondaryMuscles": ["QUADS", "SHOULDERS", "GLUTES"],
+    "instructions": "Hold dumbbells at shoulders, squat down, then drive up explosively pressing the dumbbells overhead."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000061",
+    "name": "Cable Fly (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Set pulleys to chest height, step forward, bring handles together in front of chest in a hugging motion."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000062",
+    "name": "Low Cable Fly (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Set pulleys to low position, step forward, bring handles together in an upward arc in front of chest."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000063",
+    "name": "High Cable Fly (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Set pulleys to high position, step forward, bring handles together in a downward arc in front of chest."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000064",
+    "name": "Cable Curl (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Stand facing the cable with low pulley, curl the handle up by flexing elbows, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000065",
+    "name": "Cable Hammer Curl (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Attach a rope to low pulley, curl up with neutral grip keeping elbows at sides, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000066",
+    "name": "Cable Tricep Pushdown (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Face the cable machine with high pulley, push the bar or rope down by extending elbows, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000067",
+    "name": "Cable Overhead Tricep Extension (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Face away from high pulley, hold rope behind head, extend arms overhead, then lower behind head."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000068",
+    "name": "Face Pull (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRAPS", "BACK"],
+    "instructions": "Set cable to face height, pull rope toward face separating hands and squeezing rear delts, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000069",
+    "name": "Lat Pulldown (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Sit at lat pulldown machine, pull bar down to upper chest while squeezing lats, then return with control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000070",
+    "name": "Close Grip Lat Pulldown (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Use a V-bar or close grip handle, pull down to upper chest, squeeze lats, then return with control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000071",
+    "name": "Wide Grip Lat Pulldown (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Grip the bar wider than shoulder width, pull down to upper chest focusing on lat engagement, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000072",
+    "name": "Straight Arm Pulldown (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["CORE"],
+    "instructions": "Stand facing high pulley, keep arms straight, pull bar down to thighs by engaging lats, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000073",
+    "name": "Seated Cable Row (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Sit at a cable row station, pull handle to lower chest squeezing shoulder blades together, then extend arms."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000074",
+    "name": "Cable Lateral Raise (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": [],
+    "instructions": "Stand beside a low pulley, raise the handle out to the side until arm is parallel to floor, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000075",
+    "name": "Cable Front Raise (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": [],
+    "instructions": "Stand facing away from a low pulley, raise the handle in front to shoulder height, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000076",
+    "name": "Cable Reverse Fly (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["BACK", "TRAPS"],
+    "instructions": "Stand between two cables set at shoulder height, pull handles outward and back squeezing rear delts, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000077",
+    "name": "Cable Woodchop (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Set cable high, rotate torso diagonally downward across the body in a chopping motion, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000078",
+    "name": "Cable Pallof Press (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Stand perpendicular to cable at chest height, press handle straight out in front resisting rotation, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000079",
+    "name": "Cable Crunch (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Kneel facing high pulley, hold rope behind head, crunch down contracting abs, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000080",
+    "name": "Cable Pull Through (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["HAMSTRINGS"],
+    "instructions": "Face away from low pulley with rope between legs, hinge at hips, then thrust forward squeezing glutes."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000081",
+    "name": "Cable Kickback (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["HAMSTRINGS"],
+    "instructions": "Attach ankle strap to low pulley, face the machine, kick leg back and up squeezing glute, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000082",
+    "name": "Cable Hip Abduction (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "ABDUCTORS",
+    "secondaryMuscles": ["GLUTES"],
+    "instructions": "Attach ankle strap to low pulley, stand sideways, move leg away from the machine, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000083",
+    "name": "Cable Hip Adduction (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "ADDUCTORS",
+    "secondaryMuscles": [],
+    "instructions": "Attach ankle strap to low pulley, stand sideways, pull leg across body toward the machine, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000084",
+    "name": "Cable Upright Row (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRAPS"],
+    "instructions": "Stand facing low pulley, pull the bar up along the body to chin height leading with elbows, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000085",
+    "name": "Cable Bayesian Curl (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Face away from low pulley, arm extended behind, curl handle forward by flexing elbow, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000086",
+    "name": "Leg Press (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Sit in leg press, place feet shoulder width on the platform, lower the weight by bending knees, then press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000087",
+    "name": "Hack Squat (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Stand on hack squat platform with shoulders under pads, squat down, then press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000088",
+    "name": "Leg Extension (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": [],
+    "instructions": "Sit in the machine with pad on lower shins, extend legs until straight, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000089",
+    "name": "Leg Curl (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": [],
+    "instructions": "Lie face down on the machine, curl heels toward glutes, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000090",
+    "name": "Seated Leg Curl (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": [],
+    "instructions": "Sit in the machine, curl heels under the seat by flexing knees, then return to starting position."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000091",
+    "name": "Chest Press (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Sit in the machine, grip handles at chest level, press forward until arms are extended, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000092",
+    "name": "Incline Chest Press (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Sit in the incline machine, press handles upward and forward until arms are extended, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000093",
+    "name": "Pec Deck (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": [],
+    "instructions": "Sit in the machine, place arms against pads, bring arms together in front squeezing chest, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000094",
+    "name": "Shoulder Press (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS"],
+    "instructions": "Sit in the machine, grip handles at shoulder height, press overhead until arms are extended, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000095",
+    "name": "Seated Row (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Sit at the machine, pull handles toward torso squeezing shoulder blades together, then extend arms."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000096",
+    "name": "Smith Machine Squat (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Place bar on upper back in smith machine, feet slightly forward, squat down until thighs are parallel, then stand."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000097",
+    "name": "Smith Machine Bench Press (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Lie on bench under smith machine bar, lower to chest, then press up along the fixed path."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000098",
+    "name": "Smith Machine Shoulder Press (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS"],
+    "instructions": "Sit under smith machine bar at shoulder height, press overhead along the fixed path, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000099",
+    "name": "Hip Abduction (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "ABDUCTORS",
+    "secondaryMuscles": ["GLUTES"],
+    "instructions": "Sit in the machine with pads on outer thighs, push legs apart against resistance, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000100",
+    "name": "Hip Adduction (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "ADDUCTORS",
+    "secondaryMuscles": [],
+    "instructions": "Sit in the machine with pads on inner thighs, squeeze legs together against resistance, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000101",
+    "name": "Calf Raise (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "CALVES",
+    "secondaryMuscles": [],
+    "instructions": "Stand with shoulders under pads, raise up on toes as high as possible, hold briefly, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000102",
+    "name": "Seated Calf Raise (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "CALVES",
+    "secondaryMuscles": [],
+    "instructions": "Sit with pads on knees and balls of feet on platform, raise heels as high as possible, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000103",
+    "name": "Reverse Pec Deck (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["BACK", "TRAPS"],
+    "instructions": "Sit facing the machine, grip handles with arms extended, pull arms back squeezing rear delts, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000104",
+    "name": "Assisted Pull Up (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Kneel on the assist pad, grip the bar overhead, pull yourself up until chin is over bar, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000105",
+    "name": "Assisted Dip (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": ["CHEST", "SHOULDERS"],
+    "instructions": "Kneel on the assist pad, grip dip handles, lower body by bending elbows, then press back up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000106",
+    "name": "Glute Ham Raise (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": ["GLUTES", "CORE"],
+    "instructions": "Secure feet in GHD, start with torso parallel to floor, lower body forward, then curl back up using hamstrings."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000107",
+    "name": "Chest Supported T-Bar Row (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Lie on the chest pad, grip handles, row weight up squeezing shoulder blades together, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000108",
+    "name": "Pendulum Squat (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES"],
+    "instructions": "Stand on the platform with shoulders under pads, squat down through the pendulum arc, then press up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000109",
+    "name": "Belt Squat (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Attach belt around hips to the machine, stand on platform, squat down, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000110",
+    "name": "Preacher Curl (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Sit at the machine, place upper arms on the pad, curl the handles up, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000111",
+    "name": "Pull Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Hang from a bar with palms facing away, pull yourself up until chin is over the bar, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000112",
+    "name": "Chin Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Hang from a bar with palms facing you, pull yourself up until chin is over the bar, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000113",
+    "name": "Wide Grip Pull Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Hang from a bar with a wide overhand grip, pull yourself up until chin is over the bar, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000114",
+    "name": "Neutral Grip Pull Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Hang from parallel handles with palms facing each other, pull yourself up until chin is over the bar, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000115",
+    "name": "Push Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS", "CORE"],
+    "instructions": "Start in plank position, lower chest to the floor by bending elbows, then push back up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000116",
+    "name": "Wide Push Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Perform push up with hands placed wider than shoulder width to emphasize chest engagement."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000117",
+    "name": "Diamond Push Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": ["CHEST", "SHOULDERS"],
+    "instructions": "Place hands together under chest forming a diamond shape, lower chest to hands, then push up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000118",
+    "name": "Decline Push Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Place feet on an elevated surface, hands on the floor, lower chest to floor, then push up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000119",
+    "name": "Pike Push Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS"],
+    "instructions": "Start in a pike position with hips high, lower head toward the floor by bending elbows, then push up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000120",
+    "name": "Dip",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": ["CHEST", "SHOULDERS"],
+    "instructions": "Support yourself on parallel bars, lower body by bending elbows until upper arms are parallel to floor, then push up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000121",
+    "name": "Bench Dip",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": ["CHEST", "SHOULDERS"],
+    "instructions": "Place hands on bench behind you, feet forward, lower body by bending elbows, then press back up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000122",
+    "name": "Bodyweight Squat",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Stand with feet shoulder width apart, squat down until thighs are parallel to the floor, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000123",
+    "name": "Pistol Squat",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "CORE"],
+    "instructions": "Stand on one leg, extend other leg forward, squat down on the standing leg as low as possible, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000124",
+    "name": "Jump Squat",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "CALVES"],
+    "instructions": "Perform a bodyweight squat, then explode upward into a jump, land softly, and repeat."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000125",
+    "name": "Walking Lunge",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Step forward into a lunge, then bring the rear foot forward to step into the next lunge, alternating legs."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000126",
+    "name": "Reverse Lunge",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Step backward into a lunge until both knees are at 90 degrees, then push off the rear foot to return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000127",
+    "name": "Bulgarian Split Squat",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Place rear foot on a bench, lower body until front thigh is parallel to the floor, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000128",
+    "name": "Step Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES"],
+    "instructions": "Step up onto a box or bench with one foot, drive through the heel to stand on top, then step down."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000129",
+    "name": "Glute Bridge",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["HAMSTRINGS", "CORE"],
+    "instructions": "Lie on back with knees bent, drive hips up squeezing glutes at the top, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000130",
+    "name": "Single Leg Glute Bridge",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["HAMSTRINGS", "CORE"],
+    "instructions": "Lie on back, extend one leg, drive hips up with the planted foot squeezing glutes, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000131",
+    "name": "Crunch",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Lie on back with knees bent, curl shoulders off the floor contracting abs, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000132",
+    "name": "Bicycle Crunch",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Lie on back, alternate bringing opposite elbow to knee in a pedaling motion while extending the other leg."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000133",
+    "name": "Leg Raise",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Lie on back with legs straight, raise legs to 90 degrees keeping them straight, then lower without touching the floor."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000134",
+    "name": "Hanging Leg Raise",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Hang from a bar, raise legs in front until parallel to the floor or higher, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000135",
+    "name": "Hanging Knee Raise",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Hang from a bar, bring knees up toward chest, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000136",
+    "name": "Mountain Climber",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["SHOULDERS", "QUADS"],
+    "instructions": "Start in plank position, rapidly alternate driving knees toward chest in a running motion."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000137",
+    "name": "Burpee",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "FULL_BODY",
+    "secondaryMuscles": ["CHEST", "QUADS", "CORE"],
+    "instructions": "From standing, drop to a push-up, perform a push-up, jump feet to hands, then jump up with arms overhead."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000138",
+    "name": "Muscle Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "TRICEPS", "CHEST"],
+    "instructions": "Hang from a bar, explosively pull up and transition over the bar, then press up to full extension."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000139",
+    "name": "Inverted Row",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS"],
+    "instructions": "Lie under a bar set at waist height, grip the bar, pull chest to bar keeping body straight, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000140",
+    "name": "Superman",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["GLUTES"],
+    "instructions": "Lie face down, simultaneously raise arms and legs off the floor, hold briefly, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000141",
+    "name": "Bear Crawl",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "FULL_BODY",
+    "secondaryMuscles": ["CORE", "SHOULDERS", "QUADS"],
+    "instructions": "Start on all fours with knees slightly off the ground, crawl forward moving opposite hand and foot together."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000142",
+    "name": "Box Jump",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "CALVES"],
+    "instructions": "Stand in front of a box, swing arms and jump onto the box landing softly with both feet, then step down."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000143",
+    "name": "Tuck Jump",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "CALVES", "CORE"],
+    "instructions": "Jump explosively upward, tuck knees to chest at the peak, land softly, and repeat."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000144",
+    "name": "Calf Raise",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CALVES",
+    "secondaryMuscles": [],
+    "instructions": "Stand on a raised surface with heels off the edge, raise up on toes as high as possible, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000145",
+    "name": "Single Leg Calf Raise",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CALVES",
+    "secondaryMuscles": [],
+    "instructions": "Stand on one foot on a raised surface, raise up on toes as high as possible, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000146",
+    "name": "Handstand Push Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS", "CORE"],
+    "instructions": "Kick up into a handstand against a wall, lower head toward the floor by bending elbows, then push back up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000147",
+    "name": "Nordic Hamstring Curl",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": ["GLUTES"],
+    "instructions": "Kneel with feet secured, slowly lower torso forward under control using hamstrings, then pull back up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000148",
+    "name": "Sissy Squat",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": [],
+    "instructions": "Stand holding a support, lean back while bending knees and rising on toes, lower until deep stretch, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000149",
+    "name": "Toes to Bar",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["LATS", "FOREARMS"],
+    "instructions": "Hang from a bar, swing legs up to touch the bar with your toes, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000150",
+    "name": "Running",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "HAMSTRINGS", "CALVES"],
+    "instructions": "Run at a steady pace on a treadmill or outdoors. Maintain good posture and consistent breathing."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000151",
+    "name": "Cycling",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "HAMSTRINGS", "CALVES"],
+    "instructions": "Ride a stationary bike or outdoor bicycle at a steady pace, maintaining consistent cadence."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000152",
+    "name": "Swimming",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["FULL_BODY"],
+    "instructions": "Swim laps using preferred stroke at a steady pace, focusing on technique and breathing."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000153",
+    "name": "Rowing (Machine)",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["BACK", "QUADS", "CORE"],
+    "instructions": "Use the rowing machine with proper form: drive with legs, lean back slightly, pull handle to lower chest."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000154",
+    "name": "Elliptical",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "GLUTES"],
+    "instructions": "Use the elliptical machine at a steady pace, push and pull with arms for full body engagement."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000155",
+    "name": "Stair Climber",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "GLUTES", "CALVES"],
+    "instructions": "Use the stair climber machine at a steady pace, stepping with full foot on each step."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000156",
+    "name": "Jump Rope",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["CALVES", "SHOULDERS", "CORE"],
+    "instructions": "Swing rope over head and jump with both feet or alternating feet, maintaining a consistent rhythm."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000157",
+    "name": "Walking",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "CALVES"],
+    "instructions": "Walk at a brisk pace on a treadmill or outdoors, maintaining good posture."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000158",
+    "name": "Incline Walking",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "GLUTES", "CALVES"],
+    "instructions": "Walk on a treadmill set to a high incline, maintain upright posture without holding the handrails."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000159",
+    "name": "Sprinting",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "HAMSTRINGS", "GLUTES"],
+    "instructions": "Run at maximum effort for short distances or intervals, with rest periods between sprints."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000160",
+    "name": "Battle Ropes",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["SHOULDERS", "CORE", "BACK"],
+    "instructions": "Hold the ends of heavy ropes, alternate whipping them up and down rapidly while maintaining a squat stance."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000161",
+    "name": "Assault Bike",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "SHOULDERS", "CORE"],
+    "instructions": "Pedal the air bike while simultaneously pushing and pulling the arm handles for full body effort."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000162",
+    "name": "Ski Erg",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["LATS", "CORE", "TRICEPS"],
+    "instructions": "Stand at the ski erg, pull handles down in a skiing motion, hinge at hips, then return to start."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000163",
+    "name": "Hiking",
+    "category": "CARDIO",
+    "primaryMuscle": "CARDIO",
+    "secondaryMuscles": ["QUADS", "GLUTES", "CALVES"],
+    "instructions": "Walk at a steady pace on varied terrain, typically outdoors on trails with elevation changes."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000164",
+    "name": "Plank",
+    "category": "DURATION",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Hold a straight body position on forearms and toes, keeping hips level and core engaged."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000165",
+    "name": "Side Plank",
+    "category": "DURATION",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Lie on one side, prop up on forearm, lift hips off the ground forming a straight line, and hold."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000166",
+    "name": "Wall Sit",
+    "category": "DURATION",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES"],
+    "instructions": "Lean against a wall with knees bent at 90 degrees as if sitting in a chair, hold the position."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000167",
+    "name": "Dead Hang",
+    "category": "DURATION",
+    "primaryMuscle": "FOREARMS",
+    "secondaryMuscles": ["LATS", "SHOULDERS"],
+    "instructions": "Hang from a pull-up bar with arms fully extended, grip the bar and hold for as long as possible."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000168",
+    "name": "L-Sit",
+    "category": "DURATION",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["TRICEPS", "QUADS"],
+    "instructions": "Support yourself on parallel bars or the floor, raise legs straight out in front forming an L shape, hold."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000169",
+    "name": "Hollow Body Hold",
+    "category": "DURATION",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Lie on back, raise arms overhead and legs off the floor, press lower back into the ground, and hold."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000170",
+    "name": "Superman Hold",
+    "category": "DURATION",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["GLUTES"],
+    "instructions": "Lie face down, raise both arms and legs off the floor simultaneously, and hold the position."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000171",
+    "name": "Glute Bridge Hold",
+    "category": "DURATION",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["HAMSTRINGS", "CORE"],
+    "instructions": "Lie on back with knees bent, drive hips up squeezing glutes, and hold at the top."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000172",
+    "name": "Copenhagen Plank",
+    "category": "DURATION",
+    "primaryMuscle": "ADDUCTORS",
+    "secondaryMuscles": ["CORE"],
+    "instructions": "Lie on side with top leg on a bench, lift bottom leg and hips off the floor forming a straight line, and hold."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000173",
+    "name": "Handstand Hold",
+    "category": "DURATION",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["CORE", "TRICEPS"],
+    "instructions": "Kick up into a handstand against a wall or freestanding, hold the inverted position with arms locked out."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000174",
+    "name": "Farmer's Walk",
+    "category": "DURATION",
+    "primaryMuscle": "FOREARMS",
+    "secondaryMuscles": ["TRAPS", "CORE"],
+    "instructions": "Hold heavy dumbbells or kettlebells at your sides, walk with upright posture for time or distance."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000175",
+    "name": "Overhead Carry",
+    "category": "DURATION",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["CORE", "TRAPS"],
+    "instructions": "Press weight overhead with one or both arms, walk with upright posture for time or distance."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000176",
+    "name": "Suitcase Carry",
+    "category": "DURATION",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["FOREARMS", "TRAPS"],
+    "instructions": "Hold a heavy weight in one hand at your side, walk with upright posture resisting lateral lean."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000177",
+    "name": "Rack Carry",
+    "category": "DURATION",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["SHOULDERS", "BICEPS"],
+    "instructions": "Hold weights in the front rack position at shoulder height, walk with upright posture for time or distance."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000178",
+    "name": "Static Lunge Hold",
+    "category": "DURATION",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Step into a lunge position with both knees at 90 degrees, hold the bottom position."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000179",
+    "name": "Barbell Hack Squat (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Hold barbell behind legs, squat down and stand up while keeping the bar close to the body."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000180",
+    "name": "Zercher Squat (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "CORE", "BICEPS"],
+    "instructions": "Cradle the barbell in the crooks of your elbows, squat down until thighs are parallel, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000181",
+    "name": "Incline Dumbbell Row (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Set bench to 30-45 degrees, lie face down, row dumbbells up to sides, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000182",
+    "name": "Dumbbell Snatch (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "FULL_BODY",
+    "secondaryMuscles": ["SHOULDERS", "BACK", "QUADS"],
+    "instructions": "Start with dumbbell between feet, explosively pull it overhead in one motion by extending hips and arm."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000183",
+    "name": "Dumbbell Clean and Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "FULL_BODY",
+    "secondaryMuscles": ["SHOULDERS", "QUADS", "BACK"],
+    "instructions": "Start with dumbbells at sides, clean to shoulders by explosively pulling upward, then press overhead."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000184",
+    "name": "Cable Crossover (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Stand between cable stations with pulleys at various heights, bring hands together in front in an arc."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000185",
+    "name": "Cable Shoulder Press (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS"],
+    "instructions": "Set cables at low position, grip handles at shoulders, press overhead until arms are extended, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000186",
+    "name": "V-Bar Pushdown (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Attach V-bar to high pulley, push down by extending elbows while keeping upper arms stationary, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000187",
+    "name": "Single Arm Cable Row (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Use a single handle on a low cable, row toward hip with one arm while maintaining square hips, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000188",
+    "name": "Cable External Rotation (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": [],
+    "instructions": "Stand sideways to cable at elbow height, keep elbow at side bent 90 degrees, rotate forearm outward, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000189",
+    "name": "Reverse Grip Lat Pulldown (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Sit at lat pulldown, grip bar with palms facing you at shoulder width, pull to upper chest, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000190",
+    "name": "T-Bar Row (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Straddle the T-bar, grip handles, row the weight up to chest squeezing back, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000191",
+    "name": "Lat Pulldown (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "LATS",
+    "secondaryMuscles": ["BICEPS", "BACK"],
+    "instructions": "Sit at machine lat pulldown, grip handles, pull down to upper chest, then return with control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000192",
+    "name": "Tricep Extension (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Sit at the machine, grip handles, extend arms by pressing down, then return under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000193",
+    "name": "Bicep Curl (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Sit at the machine, place upper arms on pad, curl handles up, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000194",
+    "name": "Ab Crunch (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Sit in the machine, grip handles, crunch forward contracting abs, then return under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000195",
+    "name": "Rotary Torso (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Sit in the machine, rotate torso against the resistance to one side, then return under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000196",
+    "name": "Prone Leg Curl (Machine)",
+    "category": "MACHINE",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": [],
+    "instructions": "Lie face down on the machine with pad above heels, curl legs up toward glutes, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000197",
+    "name": "Russian Twist",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Sit with knees bent and feet off the floor, lean back slightly, rotate torso side to side."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000198",
+    "name": "V-Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Lie flat on back, simultaneously raise legs and torso to touch toes, forming a V shape, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000199",
+    "name": "Flutter Kick",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": [],
+    "instructions": "Lie on back, raise legs slightly off the floor, alternate kicking up and down in a flutter motion."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000200",
+    "name": "Plank Shoulder Tap",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["SHOULDERS"],
+    "instructions": "Hold a push-up plank position, alternate tapping each shoulder with the opposite hand while keeping hips stable."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000201",
+    "name": "Kettlebell Swing",
+    "category": "DUMBBELL",
+    "primaryMuscle": "GLUTES",
+    "secondaryMuscles": ["HAMSTRINGS", "CORE", "SHOULDERS"],
+    "instructions": "Hold kettlebell with both hands, hinge at hips, swing the bell between legs and up to chest height using hip drive."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000202",
+    "name": "Dumbbell Reverse Lunge (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Hold dumbbells at sides, step backward into a lunge until both knees are at 90 degrees, then push back to start."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000203",
+    "name": "Dumbbell Preacher Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Sit at preacher bench, place upper arm on pad, curl dumbbell up with full contraction, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000204",
+    "name": "Dumbbell Squeeze Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS"],
+    "instructions": "Lie on bench, press dumbbells together squeezing them throughout the movement, press up and lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000205",
+    "name": "Power Clean (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "FULL_BODY",
+    "secondaryMuscles": ["QUADS", "BACK", "SHOULDERS", "TRAPS"],
+    "instructions": "Start with barbell on the floor, explosively pull it up and catch it at shoulder height in a partial squat."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000206",
+    "name": "Snatch (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "FULL_BODY",
+    "secondaryMuscles": ["QUADS", "BACK", "SHOULDERS", "TRAPS"],
+    "instructions": "Start with barbell on the floor with wide grip, explosively lift and catch overhead in a squat position."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000207",
+    "name": "Clean and Jerk (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "FULL_BODY",
+    "secondaryMuscles": ["QUADS", "BACK", "SHOULDERS", "TRICEPS"],
+    "instructions": "Clean barbell to shoulders, then jerk it overhead by dipping and driving with legs."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000208",
+    "name": "Barbell Wrist Curl (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "FOREARMS",
+    "secondaryMuscles": [],
+    "instructions": "Sit with forearms on thighs palms up, curl the barbell up using only wrist movement, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000209",
+    "name": "Reverse Grip Bent Over Row (Barbell)",
+    "category": "BARBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Hinge at hips, grip bar with palms facing up, row to lower chest, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000210",
+    "name": "Cable Bicep Curl (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Stand between two high pulleys, hold handles with arms outstretched, curl toward head, then extend."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000211",
+    "name": "Reverse Grip Cable Pushdown (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Face high pulley with palms up, push down by extending elbows while keeping upper arms stationary, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000212",
+    "name": "Cable Shrug (Cable)",
+    "category": "CABLE",
+    "primaryMuscle": "TRAPS",
+    "secondaryMuscles": [],
+    "instructions": "Stand holding cable handles at sides with low pulleys, shrug shoulders straight up, hold, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000213",
+    "name": "Spiderman Push Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "CORE", "SHOULDERS"],
+    "instructions": "Perform a push-up while bringing one knee to the same-side elbow at the bottom, alternate sides."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000214",
+    "name": "Archer Push Up",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CHEST",
+    "secondaryMuscles": ["TRICEPS", "SHOULDERS"],
+    "instructions": "Take a wide push-up position, lower toward one hand while extending the other arm out straight, alternate."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000215",
+    "name": "Skater Squat",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Stand on one leg, extend the other behind you, squat down touching rear knee to the floor, then stand."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000216",
+    "name": "Plank Up Down",
+    "category": "BODYWEIGHT",
+    "primaryMuscle": "CORE",
+    "secondaryMuscles": ["SHOULDERS", "TRICEPS"],
+    "instructions": "Start in forearm plank, press up to high plank one arm at a time, then return to forearm plank."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000217",
+    "name": "Single Leg Romanian Deadlift (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "HAMSTRINGS",
+    "secondaryMuscles": ["GLUTES", "CORE"],
+    "instructions": "Stand on one leg holding a dumbbell, hinge at hips lowering the weight while raising the free leg behind, then return."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000218",
+    "name": "Dumbbell Walking Lunge (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "HAMSTRINGS"],
+    "instructions": "Hold dumbbells at sides, step forward into a lunge, then bring rear foot forward to next lunge."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000219",
+    "name": "Seated Dumbbell Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Sit on a bench holding dumbbells, curl weights up keeping elbows at sides, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000220",
+    "name": "Zottman Curl (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BICEPS",
+    "secondaryMuscles": ["FOREARMS"],
+    "instructions": "Curl dumbbells up with palms facing you, rotate to palms down at the top, then lower with palms down."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000221",
+    "name": "Seated Dumbbell Shoulder Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "SHOULDERS",
+    "secondaryMuscles": ["TRICEPS"],
+    "instructions": "Sit on a bench with back support, press dumbbells overhead from shoulder height until arms are extended."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000222",
+    "name": "Bench Supported Row (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Place non-working hand and knee on bench, row dumbbell to hip with other arm, then lower."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000223",
+    "name": "Dumbbell Sumo Squat (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "QUADS",
+    "secondaryMuscles": ["GLUTES", "ADDUCTORS"],
+    "instructions": "Hold one dumbbell between legs with wide stance and toes out, squat down, then stand up."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000224",
+    "name": "Single Arm Dumbbell Row (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "BACK",
+    "secondaryMuscles": ["BICEPS", "LATS"],
+    "instructions": "Hinge forward with one hand braced on a bench, row dumbbell to hip, then lower under control."
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000225",
+    "name": "Dumbbell Tate Press (Dumbbell)",
+    "category": "DUMBBELL",
+    "primaryMuscle": "TRICEPS",
+    "secondaryMuscles": [],
+    "instructions": "Lie on bench holding dumbbells above chest, lower them to chest by bending elbows outward, then extend."
+  }
+]
