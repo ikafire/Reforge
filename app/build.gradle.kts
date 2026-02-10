@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.ikafire.stronger"
+    namespace = "io.github.ikafire.reforge"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.github.ikafire.stronger"
+        applicationId = "io.github.ikafire.reforge"
         minSdk = 29
         targetSdk = 35
         versionCode = 1

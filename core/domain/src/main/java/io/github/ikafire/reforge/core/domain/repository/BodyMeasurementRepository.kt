@@ -1,0 +1,14 @@
+package io.github.ikafire.reforge.core.domain.repository
+
+import io.github.ikafire.reforge.core.domain.model.BodyMeasurement
+import io.github.ikafire.reforge.core.domain.model.MeasurementType
+import kotlinx.coroutines.flow.Flow
+
+interface BodyMeasurementRepository {
+    fun getMeasurementsByType(type: MeasurementType): Flow<List<BodyMeasurement>>
+    fun getLatestMeasurement(type: MeasurementType): Flow<BodyMeasurement?>
+    suspend fun insertMeasurement(measurement: BodyMeasurement)
+    suspend fun deleteMeasurement(id: String)
+    suspend fun convertAllLengthMeasurements(factor: Double)
+    suspend fun convertAllWeightMeasurements(factor: Double)
+}

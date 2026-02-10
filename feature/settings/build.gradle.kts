@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.ikafire.stronger.feature.settings"
+    namespace = "io.github.ikafire.reforge.feature.settings"
     compileSdk = 35
 
     defaultConfig {

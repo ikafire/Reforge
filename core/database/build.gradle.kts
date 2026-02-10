@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.ikafire.stronger.core.database"
+    namespace = "io.github.ikafire.reforge.core.database"
     compileSdk = 35
 
     defaultConfig {

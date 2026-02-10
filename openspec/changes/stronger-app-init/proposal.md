@@ -1,6 +1,6 @@
 ## Why
 
-Strong is the leading workout tracker app, but locks core features (unlimited templates, progress charts, unlimited custom exercises) behind a paywall. It also lacks support for effective resistance tracking on leverage-based machines and has no AI training assistance. Since it's closed-source, these gaps can't be fixed. Stronger is a free, open-source (MIT) Android alternative that replicates Strong's proven UX while removing all artificial limits and adding genuinely useful features.
+Strong is the leading workout tracker app, but locks core features (unlimited templates, progress charts, unlimited custom exercises) behind a paywall. It also lacks support for effective resistance tracking on leverage-based machines and has no AI training assistance. Since it's closed-source, these gaps can't be fixed. Reforge is a free, open-source (MIT) Android alternative that replicates Strong's proven UX while removing all artificial limits and adding genuinely useful features.
 
 ## What Changes
 

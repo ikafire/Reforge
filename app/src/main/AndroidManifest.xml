@@ -7,17 +7,17 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".StrongerApplication"
+        android:name=".ReforgeApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Stronger">
+        android:theme="@style/Theme.Reforge">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Stronger">
+            android:theme="@style/Theme.Reforge">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

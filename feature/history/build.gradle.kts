@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.ikafire.stronger.feature.history"
+    namespace = "io.github.ikafire.reforge.feature.history"
     compileSdk = 35
 
     defaultConfig {

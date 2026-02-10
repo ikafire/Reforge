@@ -1,4 +1,4 @@
-# Stronger
+# Reforge
 
 A free, open-source (MIT) Android workout tracker app that replicates Strong's proven UX while removing artificial limits and adding genuinely useful features.
 
@@ -99,8 +99,8 @@ Install via Android Studio SDK Manager (`Tools > SDK Manager`):
 
 4. **Clone and Open**
    ```bash
-   git clone https://github.com/yourusername/stronger.git
-   cd stronger
+   git clone https://github.com/yourusername/reforge.git
+   cd reforge
    ```
    Open in Android Studio: `File > Open > select project folder`
 
@@ -111,7 +111,7 @@ Install via Android Studio SDK Manager (`Tools > SDK Manager`):
 3. Enable **Google Drive API**
 4. Configure OAuth consent screen (External, app name, scopes)
 5. Create OAuth 2.0 credentials (Android client)
-   - Package name: `io.github.ikafire.stronger`
+   - Package name: `io.github.ikafire.reforge`
    - SHA-1 fingerprint: `./gradlew signingReport`
 6. Download `credentials.json` and place in `app/` directory
 
@@ -127,7 +127,7 @@ Install via Android Studio SDK Manager (`Tools > SDK Manager`):
 ./gradlew installDebug
 
 # Build and run
-./gradlew :app:installDebug && adb shell am start -n io.github.ikafire.stronger/.MainActivity
+./gradlew :app:installDebug && adb shell am start -n io.github.ikafire.reforge/.MainActivity
 ```
 
 ### Release Build

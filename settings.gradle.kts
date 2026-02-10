@@ -20,7 +20,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Stronger"
+rootProject.name = "Reforge"
 
 include(":app")
 

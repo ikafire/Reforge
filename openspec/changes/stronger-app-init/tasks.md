@@ -7,8 +7,8 @@
 - [x] 1.5 Create base Application class with Hilt setup
 - [x] 1.6 ✓ VALIDATE: Project builds and launches on emulator
   - Run: `./gradlew assembleDebug lintDebug`
-  - Run: `adb shell am start -n io.github.ikafire.stronger/.MainActivity`
-  - Verify: App launches without crash, shows "Stronger" text
+  - Run: `adb shell am start -n io.github.ikafire.reforge/.MainActivity`
+  - Verify: App launches without crash, shows "Reforge" text
 
 ## 2. Core Infrastructure
 

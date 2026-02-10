@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.ikafire.stronger.feature.exercises"
+    namespace = "io.github.ikafire.reforge.feature.exercises"
     compileSdk = 35
 
     defaultConfig {

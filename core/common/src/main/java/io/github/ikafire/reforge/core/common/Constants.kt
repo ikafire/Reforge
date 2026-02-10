@@ -1,0 +1,9 @@
+package io.github.ikafire.reforge.core.common
+
+object Constants {
+    const val DATABASE_NAME = "reforge_database"
+    const val DEFAULT_REST_TIMER_SECONDS = 90
+    const val RPE_MIN = 6.0
+    const val RPE_MAX = 10.0
+    const val RPE_STEP = 0.5
+}

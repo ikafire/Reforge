@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.ikafire.stronger.core.ui"
+    namespace = "io.github.ikafire.reforge.core.ui"
     compileSdk = 35
 
     defaultConfig {

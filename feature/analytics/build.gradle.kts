@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.ikafire.stronger.feature.analytics"
+    namespace = "io.github.ikafire.reforge.feature.analytics"
     compileSdk = 35
 
     defaultConfig {

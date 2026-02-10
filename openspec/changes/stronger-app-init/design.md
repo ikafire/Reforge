@@ -1,6 +1,6 @@
 ## Context
 
-Stronger is a greenfield Android workout tracker app. There is no existing codebase — this design establishes the foundational architecture for all 10 capabilities defined in the proposal. The developer is new to Android development, so the architecture must be learnable and well-documented while remaining robust enough for a production app with future KMP migration potential.
+Reforge is a greenfield Android workout tracker app. There is no existing codebase — this design establishes the foundational architecture for all 10 capabilities defined in the proposal. The developer is new to Android development, so the architecture must be learnable and well-documented while remaining robust enough for a production app with future KMP migration potential.
 
 ## Goals / Non-Goals
 
@@ -73,7 +73,7 @@ Exercise
 ├── secondaryMuscles: List<Enum>
 ├── instructions: String?
 ├── isCustom: Boolean
-├── resistanceProfile: ResistanceProfile?   ← NEW (Stronger-unique)
+├── resistanceProfile: ResistanceProfile?   ← NEW (Reforge-unique)
 └── createdAt: Instant
 
 ResistanceProfile
