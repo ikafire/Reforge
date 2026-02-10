@@ -611,13 +611,13 @@ private fun ResistanceProfileForm(
     }
 }
 
-private data class PrRecord(
+internal data class PrRecord(
     val date: Instant,
     val type: String,
     val value: String,
 )
 
-private fun buildPrHistory(history: List<ExerciseHistoryItem>): List<PrRecord> {
+internal fun buildPrHistory(history: List<ExerciseHistoryItem>): List<PrRecord> {
     val sorted = history.sortedBy { it.workoutDate }
     val records = mutableListOf<PrRecord>()
     var bestWeight = 0.0

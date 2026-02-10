@@ -71,8 +71,13 @@ fun ActiveWorkoutScreen(
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val workout = uiState.activeWorkout
 
-    if (workout == null) {
+    if (workout == null && !uiState.isLoading) {
         LaunchedEffect(Unit) { onBackClick() }
+        return
+    }
+
+    if (workout == null) {
+        // Still loading — wait for DB to populate
         return
     }
 

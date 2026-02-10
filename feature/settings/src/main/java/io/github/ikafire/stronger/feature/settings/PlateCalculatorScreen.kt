@@ -175,7 +175,7 @@ fun PlateCalculatorScreen(
     }
 }
 
-private fun calculatePlates(
+internal fun calculatePlates(
     targetWeight: Double,
     barWeight: Double,
     availablePlates: List<Double>,

@@ -100,10 +100,13 @@ class WorkoutViewModel @Inject constructor(
         }
     }
 
-    fun startEmptyWorkout() {
+    fun startEmptyWorkout(onStarted: () -> Unit = {}) {
         viewModelScope.launch {
             val activeWorkout = workoutRepository.getActiveWorkout().first()
-            if (activeWorkout != null) return@launch
+            if (activeWorkout != null) {
+                onStarted()
+                return@launch
+            }
 
             val workout = Workout(
                 id = UUID.randomUUID().toString(),
@@ -111,6 +114,7 @@ class WorkoutViewModel @Inject constructor(
                 isActive = true,
             )
             workoutRepository.startWorkout(workout)
+            onStarted()
         }
     }
 

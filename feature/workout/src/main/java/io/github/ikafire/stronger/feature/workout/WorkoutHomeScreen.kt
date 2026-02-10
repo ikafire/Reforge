@@ -67,8 +67,7 @@ fun WorkoutHomeScreen(
                     if (uiState.activeWorkout != null) {
                         onNavigateToActiveWorkout()
                     } else {
-                        viewModel.startEmptyWorkout()
-                        onNavigateToActiveWorkout()
+                        viewModel.startEmptyWorkout(onStarted = onNavigateToActiveWorkout)
                     }
                 },
                 modifier = Modifier.fillMaxWidth(),

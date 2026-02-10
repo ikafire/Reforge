@@ -148,7 +148,7 @@ fun WarmUpCalculatorScreen(
     }
 }
 
-private fun calculateWarmUp(workingWeight: Double, barWeight: Double): List<WarmUpSet> {
+internal fun calculateWarmUp(workingWeight: Double, barWeight: Double): List<WarmUpSet> {
     if (workingWeight <= barWeight) return emptyList()
 
     val percentages = listOf(
@@ -171,7 +171,7 @@ private fun calculateWarmUp(workingWeight: Double, barWeight: Double): List<Warm
     }
 }
 
-private fun roundToNearest2_5(weight: Double, barWeight: Double): Double {
+internal fun roundToNearest2_5(weight: Double, barWeight: Double): Double {
     val perSide = (weight - barWeight) / 2.0
     val rounded = ceil(perSide / 2.5) * 2.5
     return barWeight + rounded * 2

@@ -130,15 +130,6 @@ class ExerciseDetailViewModel @Inject constructor(
         }
     }
 
-    private fun computeOneRm(set: HistorySet): Double {
-        val weight = set.effectiveWeight ?: set.weight ?: return 0.0
-        val reps = set.reps ?: return 0.0
-        if (reps <= 0 || weight <= 0) return 0.0
-        if (reps == 1) return weight
-        // Epley formula: 1RM = weight * (1 + reps / 30)
-        return weight * (1 + reps / 30.0)
-    }
-
     fun updateExercise(exercise: Exercise) {
         viewModelScope.launch {
             exerciseRepository.updateExercise(exercise)
@@ -172,4 +163,13 @@ class ExerciseDetailViewModel @Inject constructor(
             exerciseRepository.updateExercise(current.copy(resistanceProfile = null))
         }
     }
+}
+
+internal fun computeOneRm(set: HistorySet): Double {
+    val weight = set.effectiveWeight ?: set.weight ?: return 0.0
+    val reps = set.reps ?: return 0.0
+    if (reps <= 0 || weight <= 0) return 0.0
+    if (reps == 1) return weight
+    // Epley formula: 1RM = weight * (1 + reps / 30)
+    return weight * (1 + reps / 30.0)
 }

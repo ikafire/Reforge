@@ -3,6 +3,7 @@
 *.jar
 *.war
 *.ear
+.kotlin
 
 # Android
 *.apk

@@ -130,7 +130,7 @@ class CsvImporter @Inject constructor(
         )
     }
 
-    private fun matchExercise(name: String, library: Map<String, Exercise>): Exercise? {
+    internal fun matchExercise(name: String, library: Map<String, Exercise>): Exercise? {
         // Exact match (case-insensitive)
         library[name.lowercase()]?.let { return it }
 
