@@ -24,5 +24,6 @@ data class WorkoutExerciseEntity(
     val exerciseId: String,
     val sortOrder: Int,
     val supersetGroup: Int? = null,
-    val notes: String? = null
+    val notes: String? = null,
+    val restTimerSeconds: Int? = null,
 )

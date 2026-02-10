@@ -12,4 +12,5 @@ interface UserPreferencesRepository {
     suspend fun setWeightUnit(weightUnit: WeightUnit)
     suspend fun setLengthUnit(lengthUnit: LengthUnit)
     suspend fun setOnboardingCompleted()
+    suspend fun setDefaultRestTimerSeconds(seconds: Int)
 }

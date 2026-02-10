@@ -7,5 +7,6 @@ enum class ExerciseCategory {
     MACHINE,
     BODYWEIGHT,
     CARDIO,
-    DURATION
+    DURATION,
+    OTHER
 }

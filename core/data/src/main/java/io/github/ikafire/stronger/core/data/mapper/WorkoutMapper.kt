@@ -37,6 +37,7 @@ fun WorkoutExerciseEntity.toDomain(): WorkoutExercise = WorkoutExercise(
     sortOrder = sortOrder,
     supersetGroup = supersetGroup,
     notes = notes,
+    restTimerSeconds = restTimerSeconds,
 )
 
 fun WorkoutExercise.toEntity(): WorkoutExerciseEntity = WorkoutExerciseEntity(
@@ -46,6 +47,7 @@ fun WorkoutExercise.toEntity(): WorkoutExerciseEntity = WorkoutExerciseEntity(
     sortOrder = sortOrder,
     supersetGroup = supersetGroup,
     notes = notes,
+    restTimerSeconds = restTimerSeconds,
 )
 
 fun WorkoutSetEntity.toDomain(): WorkoutSet = WorkoutSet(

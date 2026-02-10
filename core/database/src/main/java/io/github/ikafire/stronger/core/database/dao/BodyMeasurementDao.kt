@@ -21,4 +21,10 @@ interface BodyMeasurementDao {
 
     @Query("DELETE FROM body_measurements WHERE id = :id")
     suspend fun deleteMeasurement(id: String)
+
+    @Query("UPDATE body_measurements SET value = value * :factor WHERE type != 'WEIGHT'")
+    suspend fun convertAllLengthMeasurements(factor: Double)
+
+    @Query("UPDATE body_measurements SET value = value * :factor WHERE type = 'WEIGHT'")
+    suspend fun convertAllWeightMeasurements(factor: Double)
 }

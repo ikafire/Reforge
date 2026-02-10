@@ -144,6 +144,9 @@ fun ActiveWorkoutScreen(
                     onExerciseNotesChange = { notes ->
                         viewModel.updateExerciseNotes(detail.workoutExercise, notes)
                     },
+                    onRestTimerChange = { seconds ->
+                        viewModel.updateExerciseRestTimer(detail.workoutExercise, seconds)
+                    },
                 )
             }
 
@@ -266,12 +269,14 @@ private fun ExerciseCard(
     onSetType: (WorkoutSet, SetType) -> Unit,
     onRemoveExercise: () -> Unit,
     onExerciseNotesChange: (String) -> Unit,
+    onRestTimerChange: (Int?) -> Unit,
 ) {
     val exercise = detail.exercise
     val supersetGroup = detail.workoutExercise.supersetGroup
     var showMenu by remember { mutableStateOf(false) }
     var showRemoveDialog by remember { mutableStateOf(false) }
     var showNotes by remember { mutableStateOf(detail.workoutExercise.notes?.isNotBlank() == true) }
+    var showRestTimerDialog by remember { mutableStateOf(false) }
 
     val totalReps = detail.sets.filter { it.isCompleted }.sumOf { it.reps ?: 0 }
 
@@ -311,6 +316,16 @@ private fun ExerciseCard(
                             text = { Text("Add Note") },
                             onClick = {
                                 showNotes = true
+                                showMenu = false
+                            },
+                        )
+                        DropdownMenuItem(
+                            text = {
+                                val current = detail.workoutExercise.restTimerSeconds
+                                Text(if (current != null) "Rest Timer (${current}s)" else "Rest Timer")
+                            },
+                            onClick = {
+                                showRestTimerDialog = true
                                 showMenu = false
                             },
                         )
@@ -396,6 +411,48 @@ private fun ExerciseCard(
                     Text("Cancel")
                 }
             },
+        )
+    }
+
+    if (showRestTimerDialog) {
+        val options = listOf(null, 30, 60, 90, 120, 180, 300)
+        AlertDialog(
+            onDismissRequest = { showRestTimerDialog = false },
+            title = { Text("Rest Timer") },
+            text = {
+                Column {
+                    Text("Select rest duration for this exercise:", style = MaterialTheme.typography.bodyMedium)
+                    Spacer(modifier = Modifier.height(8.dp))
+                    options.forEach { seconds ->
+                        val label = when (seconds) {
+                            null -> "Default"
+                            else -> "${seconds / 60}m ${seconds % 60}s".replace("0m ", "").replace(" 0s", "")
+                        }
+                        val selected = detail.workoutExercise.restTimerSeconds == seconds
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable {
+                                    onRestTimerChange(seconds)
+                                    showRestTimerDialog = false
+                                }
+                                .padding(vertical = 8.dp),
+                            verticalAlignment = Alignment.CenterVertically,
+                        ) {
+                            Text(
+                                text = label,
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface,
+                            )
+                            if (selected) {
+                                Spacer(modifier = Modifier.weight(1f))
+                                Icon(Icons.Default.Check, contentDescription = null, tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(20.dp))
+                            }
+                        }
+                    }
+                }
+            },
+            confirmButton = {},
         )
     }
 }

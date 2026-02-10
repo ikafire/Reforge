@@ -156,19 +156,19 @@
 
 ## 6. MVP: Templates
 
-- [ ] 6.1 Create TemplateDao, TemplateFolderDao, TemplateExerciseDao
-- [ ] 6.2 Create TemplateRepository with domain models
-- [ ] 6.3 Implement template list in Workout tab (grouped by folders)
-- [ ] 6.4 Implement template folder CRUD
-- [ ] 6.5 Implement create template flow
-- [ ] 6.6 Implement template editor (add/remove/reorder exercises, set targets)
-- [ ] 6.7 Implement superset configuration in templates
-- [ ] 6.8 Implement template preview screen (exercises, set counts, muscle groups, last performed)
-- [ ] 6.9 Implement "Start Workout" from template (pre-populate exercises and weights)
-- [ ] 6.10 Implement duplicate template
-- [ ] 6.11 Implement delete template
-- [ ] 6.12 Implement move template between folders
-- [ ] 6.13 ✓ VALIDATE: Templates meet specs/templates/spec.md
+- [x] 6.1 Create TemplateDao, TemplateFolderDao, TemplateExerciseDao
+- [x] 6.2 Create TemplateRepository with domain models
+- [x] 6.3 Implement template list in Workout tab (grouped by folders)
+- [x] 6.4 Implement template folder CRUD
+- [x] 6.5 Implement create template flow
+- [x] 6.6 Implement template editor (add/remove/reorder exercises, set targets)
+- [x] 6.7 Implement superset configuration in templates
+- [x] 6.8 Implement template preview screen (exercises, set counts, muscle groups, last performed)
+- [x] 6.9 Implement "Start Workout" from template (pre-populate exercises and weights)
+- [x] 6.10 Implement duplicate template
+- [x] 6.11 Implement delete template
+- [x] 6.12 Implement move template between folders
+- [x] 6.13 ✓ VALIDATE: Templates meet specs/templates/spec.md
   - Run: `./gradlew :feature:workout:connectedAndroidTest --tests "*.Template*"`
   - Spec: Create workout templates - "Create template" + "No template limit" scenarios
   - Spec: Template folders - "Create a folder" + "Templates without folder" scenarios
@@ -189,16 +189,16 @@
 
 ## 7. MVP: History
 
-- [ ] 7.1 Create :feature:history module
-- [ ] 7.2 Implement HistoryScreen with chronological workout list grouped by month
-- [ ] 7.3 Implement workout card (name, date, exercises with set count and best set, duration, volume, PR count)
-- [ ] 7.4 Implement WorkoutDetailScreen (full workout details)
-- [ ] 7.5 Implement calendar modal dialog (green checkmarks on workout days)
-- [ ] 7.6 Implement calendar spanning multiple months (scrollable)
-- [ ] 7.7 Implement tap calendar day to scroll to workout
-- [ ] 7.8 Implement search history by exercise or workout name
-- [ ] 7.9 Implement delete workout from history (with confirmation and PR recalculation)
-- [ ] 7.10 ✓ VALIDATE: History meets specs/history/spec.md
+- [x] 7.1 Create :feature:history module
+- [x] 7.2 Implement HistoryScreen with chronological workout list grouped by month
+- [x] 7.3 Implement workout card (name, date, exercises with set count and best set, duration, volume, PR count)
+- [x] 7.4 Implement WorkoutDetailScreen (full workout details)
+- [x] 7.5 Implement calendar modal dialog (green checkmarks on workout days)
+- [x] 7.6 Implement calendar spanning multiple months (scrollable)
+- [x] 7.7 Implement tap calendar day to scroll to workout
+- [x] 7.8 Implement search history by exercise or workout name
+- [x] 7.9 Implement delete workout from history (with confirmation and PR recalculation)
+- [x] 7.10 ✓ VALIDATE: History meets specs/history/spec.md
   - Run: `./gradlew :feature:history:connectedAndroidTest`
   - Spec: Workout history list - "View history" + "Workout card exercise list" scenarios
   - Spec: Workout detail view - "Open workout detail" scenario
@@ -215,10 +215,10 @@
 
 ## 8. MVP: Profile Tab
 
-- [ ] 8.1 Create :feature:profile module
-- [ ] 8.2 Implement ProfileScreen with workout count
-- [ ] 8.3 Implement Dashboard "Workouts per week" bar chart (last 8 weeks)
-- [ ] 8.4 ✓ VALIDATE: Profile Tab meets specs/app-shell/spec.md (Profile section)
+- [x] 8.1 Create :feature:profile module
+- [x] 8.2 Implement ProfileScreen with workout count
+- [x] 8.3 Implement Dashboard "Workouts per week" bar chart (last 8 weeks)
+- [x] 8.4 ✓ VALIDATE: Profile Tab meets specs/app-shell/spec.md (Profile section)
   - Run: `./gradlew :feature:profile:connectedAndroidTest`
   - Spec: Profile tab - "View profile" scenario
   - Spec: Profile tab - "Workouts per week chart" scenario
@@ -228,11 +228,11 @@
 
 ## 9. MVP: Exercise History & Charts Tab (Basic)
 
-- [ ] 9.1 Implement Exercise History tab (workout history for specific exercise)
-- [ ] 9.2 Implement Exercise Charts tab with 1RM progression chart (Epley formula)
-- [ ] 9.3 Implement Exercise Records tab (max volume, max reps, max weight, lifetime stats)
-- [ ] 9.4 Implement basic PR detection on set completion (star icon indicator)
-- [ ] 9.5 ✓ VALIDATE: Exercise Charts meet specs/analytics/spec.md (basic requirements)
+- [x] 9.1 Implement Exercise History tab (workout history for specific exercise)
+- [x] 9.2 Implement Exercise Charts tab with 1RM progression chart (Epley formula)
+- [x] 9.3 Implement Exercise Records tab (max volume, max reps, max weight, lifetime stats)
+- [x] 9.4 Implement basic PR detection on set completion (star icon indicator)
+- [x] 9.5 ✓ VALIDATE: Exercise Charts meet specs/analytics/spec.md (basic requirements)
   - Run: `./gradlew :feature:exercises:connectedAndroidTest --tests "*.Charts*"`
   - Spec: Per-exercise 1RM progression chart - "View 1RM chart" scenario
   - Spec: PR detection - "New 1RM PR" + "PR types tracked" scenarios
@@ -245,12 +245,12 @@
 
 ## 10. Post-MVP: Timer Notifications
 
-- [ ] 10.1 Implement timer notification when app is backgrounded
-- [ ] 10.2 Implement timer complete notification with sound/vibration
-- [ ] 10.3 Implement configurable rest duration per exercise
-- [ ] 10.4 Implement global default rest duration setting
-- [ ] 10.5 Implement log set from notification action
-- [ ] 10.6 ✓ VALIDATE: Timer Notifications meet specs/timer/spec.md
+- [x] 10.1 Implement timer notification when app is backgrounded
+- [x] 10.2 Implement timer complete notification with sound/vibration
+- [x] 10.3 Implement configurable rest duration per exercise
+- [x] 10.4 Implement global default rest duration setting
+- [x] 10.5 Implement log set from notification action
+- [x] 10.6 ✓ VALIDATE: Timer Notifications meet specs/timer/spec.md
   - Run: `./gradlew :feature:workout:connectedAndroidTest --tests "*.Timer*"`
   - Spec: Auto-start rest timer on set completion - "Complete a set" scenario
   - Spec: Configurable rest duration per exercise - all scenarios
@@ -265,15 +265,15 @@
 
 ## 11. Post-MVP: Analytics (Advanced)
 
-- [ ] 11.1 Create :feature:analytics module
-- [ ] 11.2 Implement total volume added chart per exercise
-- [ ] 11.3 Implement best set chart per exercise
-- [ ] 11.4 Implement total reps chart per exercise
-- [ ] 11.5 Implement muscle heat map (body diagram with volume distribution)
-- [ ] 11.6 Implement time period selector for heat map
-- [ ] 11.7 Implement tap muscle group for exercise/volume detail
-- [ ] 11.8 Implement VIEW RECORDS HISTORY (chronological list of PRs)
-- [ ] 11.9 ✓ VALIDATE: Advanced Analytics meet specs/analytics/spec.md
+- [x] 11.1 Create :feature:analytics module
+- [x] 11.2 Implement total volume added chart per exercise
+- [x] 11.3 Implement best set chart per exercise
+- [x] 11.4 Implement total reps chart per exercise
+- [x] 11.5 Implement muscle heat map (body diagram with volume distribution)
+- [x] 11.6 Implement time period selector for heat map
+- [x] 11.7 Implement tap muscle group for exercise/volume detail
+- [x] 11.8 Implement VIEW RECORDS HISTORY (chronological list of PRs)
+- [x] 11.9 ✓ VALIDATE: Advanced Analytics meet specs/analytics/spec.md
   - Run: `./gradlew :feature:analytics:connectedAndroidTest`
   - Spec: Per-exercise total volume added chart - all scenarios
   - Spec: Per-exercise best set chart - "View best set chart" scenario
@@ -289,17 +289,17 @@
 
 ## 12. Post-MVP: Body Tracking
 
-- [ ] 12.1 Create :feature:measure module
-- [ ] 12.2 Define BodyMeasurement entity
-- [ ] 12.3 Create BodyMeasurementDao and repository
-- [ ] 12.4 Implement MeasureScreen layout (vitals + body parts list)
-- [ ] 12.5 Implement bodyweight logging
-- [ ] 12.6 Implement body fat percentage logging
-- [ ] 12.7 Implement caloric intake logging
-- [ ] 12.8 Implement body part measurements (neck, shoulders, chest, biceps, forearms, waist, hips, thighs, calves)
-- [ ] 12.9 Implement measurement line charts
-- [ ] 12.10 Implement delete measurement entries
-- [ ] 12.11 ✓ VALIDATE: Body Tracking meets specs/body-tracking/spec.md
+- [x] 12.1 Create :feature:measure module
+- [x] 12.2 Define BodyMeasurement entity
+- [x] 12.3 Create BodyMeasurementDao and repository
+- [x] 12.4 Implement MeasureScreen layout (vitals + body parts list)
+- [x] 12.5 Implement bodyweight logging
+- [x] 12.6 Implement body fat percentage logging
+- [x] 12.7 Implement caloric intake logging
+- [x] 12.8 Implement body part measurements (neck, shoulders, chest, biceps, forearms, waist, hips, thighs, calves)
+- [x] 12.9 Implement measurement line charts
+- [x] 12.10 Implement delete measurement entries
+- [x] 12.11 ✓ VALIDATE: Body Tracking meets specs/body-tracking/spec.md
   - Run: `./gradlew :feature:measure:connectedAndroidTest`
   - Spec: Log bodyweight - all scenarios
   - Spec: Log body fat percentage - "Log body fat" scenario
@@ -318,11 +318,11 @@
 
 ## 13. Post-MVP: Tools
 
-- [ ] 13.1 Implement plate calculator (configurable bar weight and available plates)
-- [ ] 13.2 Implement warm-up calculator (suggest progression to working weight)
-- [ ] 13.3 Implement unit conversion with "convert all data" option
-- [ ] 13.4 Implement measurement unit conversion (cm/in)
-- [ ] 13.5 ✓ VALIDATE: Tools meet specs/tools/spec.md
+- [x] 13.1 Implement plate calculator (configurable bar weight and available plates)
+- [x] 13.2 Implement warm-up calculator (suggest progression to working weight)
+- [x] 13.3 Implement unit conversion with "convert all data" option
+- [x] 13.4 Implement measurement unit conversion (cm/in)
+- [x] 13.5 ✓ VALIDATE: Tools meet specs/tools/spec.md
   - Run: `./gradlew :app:connectedAndroidTest --tests "*.Tools*"`
   - Spec: Plate calculator - all scenarios
   - Spec: Warm-up calculator - "Calculate warm-ups" scenario
@@ -337,17 +337,17 @@
 
 ## 14. Post-MVP: Data Sync
 
-- [ ] 14.1 Implement Google account sign-in flow
-- [ ] 14.2 Implement backup database to Google Drive app data folder
-- [ ] 14.3 Implement backup metadata (app version, schema version, timestamp, workout count)
-- [ ] 14.4 Implement restore database from Google Drive (list backups, select, replace)
-- [ ] 14.5 Implement schema version mismatch handling
-- [ ] 14.6 Implement Strong CSV parser (semicolon-delimited, double-quoted)
-- [ ] 14.7 Implement Set Order special value handling (W, D, Note, Rest Timer)
-- [ ] 14.8 Implement exercise name matching to bundled library
-- [ ] 14.9 Implement import progress indicator and summary
-- [ ] 14.10 Implement CSV export with share sheet
-- [ ] 14.11 ✓ VALIDATE: Data Sync meets specs/data-sync/spec.md
+- [x] 14.1 Implement Google account sign-in flow
+- [x] 14.2 Implement backup database to Google Drive app data folder
+- [x] 14.3 Implement backup metadata (app version, schema version, timestamp, workout count)
+- [x] 14.4 Implement restore database from Google Drive (list backups, select, replace)
+- [x] 14.5 Implement schema version mismatch handling
+- [x] 14.6 Implement Strong CSV parser (semicolon-delimited, double-quoted)
+- [x] 14.7 Implement Set Order special value handling (W, D, Note, Rest Timer)
+- [x] 14.8 Implement exercise name matching to bundled library
+- [x] 14.9 Implement import progress indicator and summary
+- [x] 14.10 Implement CSV export with share sheet
+- [x] 14.11 ✓ VALIDATE: Data Sync meets specs/data-sync/spec.md
   - Run: `./gradlew :app:connectedAndroidTest --tests "*.DataSync*"` + `./gradlew :core:data:test --tests "*.CsvParser*"`
   - Spec: Backup database to Google Drive - all scenarios
   - Spec: Restore database from Google Drive - all scenarios
@@ -364,12 +364,12 @@
 
 ## 15. Post-MVP: Onboarding
 
-- [ ] 15.1 Implement first-launch onboarding flow
-- [ ] 15.2 Collect unit preference (kg/lbs)
-- [ ] 15.3 Collect measurement preference (cm/in)
-- [ ] 15.4 Offer Strong CSV import option
-- [ ] 15.5 Implement skip onboarding with defaults
-- [ ] 15.6 ✓ VALIDATE: Onboarding meets specs/app-shell/spec.md (Onboarding section)
+- [x] 15.1 Implement first-launch onboarding flow
+- [x] 15.2 Collect unit preference (kg/lbs)
+- [x] 15.3 Collect measurement preference (cm/in)
+- [x] 15.4 Offer Strong CSV import option
+- [x] 15.5 Implement skip onboarding with defaults
+- [x] 15.6 ✓ VALIDATE: Onboarding meets specs/app-shell/spec.md (Onboarding section)
   - Run: `./gradlew :app:connectedAndroidTest --tests "*.Onboarding*"`
   - Spec: Onboarding flow - "First launch" scenario
   - Spec: Onboarding flow - "Skip onboarding" scenario
@@ -377,4 +377,4 @@
     - OnboardingFlowTest: first launch → onboarding displayed, collect preferences
     - OnboardingSkipTest: dismiss → defaults applied (metric), lands on Workout tab
     - OnboardingImportTest: select import → file picker for Strong CSV
-- [ ] 15.7 print "FINISHED" after completing every task
+- [x] 15.7 print "FINISHED" after completing every task

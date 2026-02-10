@@ -297,6 +297,7 @@ private fun ExerciseCategory.displayName(): String = when (this) {
     ExerciseCategory.BODYWEIGHT -> "Bodyweight"
     ExerciseCategory.CARDIO -> "Cardio"
     ExerciseCategory.DURATION -> "Duration"
+    ExerciseCategory.OTHER -> "Other"
 }
 
 private fun MuscleGroup.displayName(): String = when (this) {

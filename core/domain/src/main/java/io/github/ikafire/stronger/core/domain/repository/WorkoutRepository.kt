@@ -1,5 +1,6 @@
 package io.github.ikafire.stronger.core.domain.repository
 
+import io.github.ikafire.stronger.core.domain.model.ExerciseHistoryItem
 import io.github.ikafire.stronger.core.domain.model.Workout
 import io.github.ikafire.stronger.core.domain.model.WorkoutExercise
 import io.github.ikafire.stronger.core.domain.model.WorkoutSet
@@ -22,4 +23,7 @@ interface WorkoutRepository {
     suspend fun updateSet(set: WorkoutSet)
     suspend fun deleteSet(setId: String)
     suspend fun deleteWorkout(workoutId: String)
+    suspend fun getCompletedSetsForExercise(exerciseId: String): List<WorkoutSet>
+    suspend fun getExerciseHistory(exerciseId: String): List<ExerciseHistoryItem>
+    suspend fun convertAllWeights(factor: Double)
 }

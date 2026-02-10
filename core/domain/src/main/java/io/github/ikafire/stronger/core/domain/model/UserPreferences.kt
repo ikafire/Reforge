@@ -5,4 +5,5 @@ data class UserPreferences(
     val weightUnit: WeightUnit = WeightUnit.KG,
     val lengthUnit: LengthUnit = LengthUnit.CM,
     val hasCompletedOnboarding: Boolean = false,
+    val defaultRestTimerSeconds: Int = 90,
 )

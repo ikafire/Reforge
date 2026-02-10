@@ -8,12 +8,16 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import io.github.ikafire.stronger.core.domain.model.Exercise
-import io.github.ikafire.stronger.core.domain.repository.ExerciseRepository
+import io.github.ikafire.stronger.feature.analytics.AnalyticsScreen
 import io.github.ikafire.stronger.feature.exercises.CreateExerciseScreen
 import io.github.ikafire.stronger.feature.exercises.ExerciseDetailScreen
 import io.github.ikafire.stronger.feature.exercises.ExerciseListScreen
+import io.github.ikafire.stronger.feature.history.HistoryScreen
+import io.github.ikafire.stronger.feature.measure.MeasureScreen
+import io.github.ikafire.stronger.feature.profile.ProfileScreen
+import io.github.ikafire.stronger.feature.settings.PlateCalculatorScreen
 import io.github.ikafire.stronger.feature.settings.SettingsScreen
+import io.github.ikafire.stronger.feature.settings.WarmUpCalculatorScreen
 import io.github.ikafire.stronger.feature.workout.ActiveWorkoutScreen
 import io.github.ikafire.stronger.feature.workout.WorkoutHomeScreen
 import io.github.ikafire.stronger.feature.workout.WorkoutViewModel
@@ -22,6 +26,8 @@ import io.github.ikafire.stronger.feature.workout.WorkoutViewModel
 fun StrongerNavHost(
     navController: NavHostController,
     onNavigateToSettings: () -> Unit,
+    onImportCsv: () -> Unit = {},
+    onExportCsv: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     NavHost(
@@ -30,10 +36,16 @@ fun StrongerNavHost(
         modifier = modifier,
     ) {
         composable<ProfileRoute> {
-            PlaceholderScreen(title = "Profile", onSettingsClick = onNavigateToSettings)
+            ProfileScreen(
+                onSettingsClick = onNavigateToSettings,
+                onAnalyticsClick = { navController.navigate(AnalyticsRoute) },
+            )
+        }
+        composable<AnalyticsRoute> {
+            AnalyticsScreen()
         }
         composable<HistoryRoute> {
-            PlaceholderScreen(title = "History")
+            HistoryScreen()
         }
         composable<WorkoutRoute> {
             val workoutViewModel: WorkoutViewModel = hiltViewModel()
@@ -85,10 +97,24 @@ fun StrongerNavHost(
             )
         }
         composable<MeasureRoute> {
-            PlaceholderScreen(title = "Measure")
+            MeasureScreen()
         }
         composable<SettingsRoute> {
             SettingsScreen(
+                onBackClick = { navController.popBackStack() },
+                onPlateCalculatorClick = { navController.navigate(PlateCalculatorRoute) },
+                onWarmUpCalculatorClick = { navController.navigate(WarmUpCalculatorRoute) },
+                onImportCsv = onImportCsv,
+                onExportCsv = onExportCsv,
+            )
+        }
+        composable<PlateCalculatorRoute> {
+            PlateCalculatorScreen(
+                onBackClick = { navController.popBackStack() },
+            )
+        }
+        composable<WarmUpCalculatorRoute> {
+            WarmUpCalculatorScreen(
                 onBackClick = { navController.popBackStack() },
             )
         }

@@ -25,4 +25,10 @@ class BodyMeasurementRepositoryImpl @Inject constructor(
 
     override suspend fun deleteMeasurement(id: String) =
         bodyMeasurementDao.deleteMeasurement(id)
+
+    override suspend fun convertAllLengthMeasurements(factor: Double) =
+        bodyMeasurementDao.convertAllLengthMeasurements(factor)
+
+    override suspend fun convertAllWeightMeasurements(factor: Double) =
+        bodyMeasurementDao.convertAllWeightMeasurements(factor)
 }

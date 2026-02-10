@@ -9,4 +9,6 @@ interface BodyMeasurementRepository {
     fun getLatestMeasurement(type: MeasurementType): Flow<BodyMeasurement?>
     suspend fun insertMeasurement(measurement: BodyMeasurement)
     suspend fun deleteMeasurement(id: String)
+    suspend fun convertAllLengthMeasurements(factor: Double)
+    suspend fun convertAllWeightMeasurements(factor: Double)
 }

@@ -57,3 +57,6 @@ enum class TopLevelDestination(
 @Serializable object CreateExerciseRoute
 @Serializable data class EditExerciseRoute(val exerciseId: String)
 @Serializable object ActiveWorkoutRoute
+@Serializable object AnalyticsRoute
+@Serializable object PlateCalculatorRoute
+@Serializable object WarmUpCalculatorRoute

@@ -232,6 +232,14 @@ class WorkoutViewModel @Inject constructor(
         }
     }
 
+    fun updateExerciseRestTimer(workoutExercise: WorkoutExercise, seconds: Int?) {
+        viewModelScope.launch {
+            workoutRepository.updateWorkoutExercise(
+                workoutExercise.copy(restTimerSeconds = seconds)
+            )
+        }
+    }
+
     fun showFinishDialog() {
         _showFinishDialog.value = true
     }

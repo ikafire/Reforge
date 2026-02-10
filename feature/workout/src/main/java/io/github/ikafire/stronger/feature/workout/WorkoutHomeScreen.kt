@@ -1,12 +1,13 @@
 package io.github.ikafire.stronger.feature.workout
 
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -26,8 +27,10 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 fun WorkoutHomeScreen(
     onNavigateToActiveWorkout: () -> Unit,
     viewModel: WorkoutViewModel = hiltViewModel(),
+    templateViewModel: TemplateViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val templateUiState by templateViewModel.uiState.collectAsStateWithLifecycle()
 
     Scaffold(
         topBar = {
@@ -38,6 +41,7 @@ fun WorkoutHomeScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
+                .verticalScroll(rememberScrollState())
                 .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
@@ -74,24 +78,21 @@ fun WorkoutHomeScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            Text(
-                text = "Templates",
-                style = MaterialTheme.typography.titleMedium,
-                modifier = Modifier.fillMaxWidth(),
+            TemplateListSection(
+                uiState = templateUiState,
+                onTemplateClick = { /* TODO: navigate to template preview */ },
+                onStartFromTemplate = { templateId ->
+                    templateViewModel.startWorkoutFromTemplate(templateId)
+                    onNavigateToActiveWorkout()
+                },
+                onDeleteTemplate = templateViewModel::deleteTemplate,
+                onDuplicateTemplate = templateViewModel::duplicateTemplate,
+                onCreateTemplate = templateViewModel::createTemplate,
+                onCreateFolder = templateViewModel::createFolder,
+                onDeleteFolder = templateViewModel::deleteFolder,
             )
-            Spacer(modifier = Modifier.height(8.dp))
 
-            Column(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center,
-            ) {
-                Text(
-                    text = "No templates yet",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
+            Spacer(modifier = Modifier.height(80.dp))
         }
     }
 }

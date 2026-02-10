@@ -31,7 +31,7 @@ import io.github.ikafire.stronger.core.database.entity.BodyMeasurementEntity
         TemplateExerciseEntity::class,
         BodyMeasurementEntity::class,
     ],
-    version = 1,
+    version = 2,
     exportSchema = true,
 )
 @TypeConverters(Converters::class)

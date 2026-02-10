@@ -5,6 +5,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -30,6 +31,7 @@ class UserPreferencesRepositoryImpl @Inject constructor(
         val WEIGHT_UNIT = stringPreferencesKey("weight_unit")
         val LENGTH_UNIT = stringPreferencesKey("length_unit")
         val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
+        val DEFAULT_REST_TIMER = intPreferencesKey("default_rest_timer_seconds")
     }
 
     override val userPreferences: Flow<UserPreferences> = context.dataStore.data.map { prefs ->
@@ -38,6 +40,7 @@ class UserPreferencesRepositoryImpl @Inject constructor(
             weightUnit = prefs[Keys.WEIGHT_UNIT]?.let { WeightUnit.valueOf(it) } ?: WeightUnit.KG,
             lengthUnit = prefs[Keys.LENGTH_UNIT]?.let { LengthUnit.valueOf(it) } ?: LengthUnit.CM,
             hasCompletedOnboarding = prefs[Keys.ONBOARDING_COMPLETED] ?: false,
+            defaultRestTimerSeconds = prefs[Keys.DEFAULT_REST_TIMER] ?: 90,
         )
     }
 
@@ -55,5 +58,9 @@ class UserPreferencesRepositoryImpl @Inject constructor(
 
     override suspend fun setOnboardingCompleted() {
         context.dataStore.edit { it[Keys.ONBOARDING_COMPLETED] = true }
+    }
+
+    override suspend fun setDefaultRestTimerSeconds(seconds: Int) {
+        context.dataStore.edit { it[Keys.DEFAULT_REST_TIMER] = seconds }
     }
 }

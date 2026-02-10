@@ -5,6 +5,9 @@ import io.github.ikafire.stronger.core.data.mapper.toEntity
 import io.github.ikafire.stronger.core.database.dao.WorkoutDao
 import io.github.ikafire.stronger.core.database.dao.WorkoutExerciseDao
 import io.github.ikafire.stronger.core.database.dao.WorkoutSetDao
+import io.github.ikafire.stronger.core.domain.model.ExerciseHistoryItem
+import io.github.ikafire.stronger.core.domain.model.HistorySet
+import io.github.ikafire.stronger.core.domain.model.SetType
 import io.github.ikafire.stronger.core.domain.model.Workout
 import io.github.ikafire.stronger.core.domain.model.WorkoutExercise
 import io.github.ikafire.stronger.core.domain.model.WorkoutSet
@@ -12,6 +15,7 @@ import io.github.ikafire.stronger.core.domain.repository.WorkoutRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.datetime.Clock
+import kotlinx.datetime.Instant
 import javax.inject.Inject
 
 class WorkoutRepositoryImpl @Inject constructor(
@@ -74,4 +78,32 @@ class WorkoutRepositoryImpl @Inject constructor(
 
     override suspend fun deleteWorkout(workoutId: String) =
         workoutDao.deleteWorkout(workoutId)
+
+    override suspend fun getCompletedSetsForExercise(exerciseId: String): List<WorkoutSet> =
+        workoutSetDao.getPreviousSetsForExercise(exerciseId).map { it.toDomain() }
+
+    override suspend fun getExerciseHistory(exerciseId: String): List<ExerciseHistoryItem> {
+        val entries = workoutSetDao.getExerciseHistory(exerciseId)
+        return entries.groupBy { it.workoutId }.map { (workoutId, sets) ->
+            val first = sets.first()
+            ExerciseHistoryItem(
+                workoutId = workoutId,
+                workoutName = first.workoutName,
+                workoutDate = Instant.fromEpochMilliseconds(first.workoutDate),
+                sets = sets.map { entry ->
+                    HistorySet(
+                        weight = entry.weight,
+                        reps = entry.reps,
+                        effectiveWeight = entry.effectiveWeight,
+                        type = try { SetType.valueOf(entry.type) } catch (_: Exception) { SetType.WORKING },
+                        rpe = entry.rpe,
+                    )
+                },
+            )
+        }.sortedByDescending { it.workoutDate }
+    }
+
+    override suspend fun convertAllWeights(factor: Double) {
+        workoutSetDao.convertAllWeights(factor)
+    }
 }
