@@ -1,6 +1,7 @@
 # Kotlin / Java
 *.class
 *.jar
+!gradle/wrapper/gradle-wrapper.jar
 *.war
 *.ear
 .kotlin
