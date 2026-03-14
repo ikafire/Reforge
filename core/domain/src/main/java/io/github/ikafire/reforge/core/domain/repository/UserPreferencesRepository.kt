@@ -13,4 +13,5 @@ interface UserPreferencesRepository {
     suspend fun setLengthUnit(lengthUnit: LengthUnit)
     suspend fun setOnboardingCompleted()
     suspend fun setDefaultRestTimerSeconds(seconds: Int)
+    suspend fun clearAll()
 }

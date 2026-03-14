@@ -63,4 +63,8 @@ class UserPreferencesRepositoryImpl @Inject constructor(
     override suspend fun setDefaultRestTimerSeconds(seconds: Int) {
         context.dataStore.edit { it[Keys.DEFAULT_REST_TIMER] = seconds }
     }
+
+    override suspend fun clearAll() {
+        context.dataStore.edit { it.clear() }
+    }
 }
