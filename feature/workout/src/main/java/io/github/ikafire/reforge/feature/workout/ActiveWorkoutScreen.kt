@@ -52,6 +52,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import io.github.ikafire.reforge.core.domain.model.Exercise
@@ -535,27 +536,41 @@ private fun SetRow(
             textAlign = TextAlign.Center,
         )
 
-        // Weight input
+        // Weight input — local state for responsive typing, synced to DB
+        var weightText by remember(set.id) {
+            mutableStateOf(
+                set.weight?.let { if (it == it.toLong().toDouble()) it.toLong().toString() else it.toString() } ?: ""
+            )
+        }
         OutlinedTextField(
-            value = set.weight?.let { if (it == it.toLong().toDouble()) it.toLong().toString() else it.toString() } ?: "",
+            value = weightText,
             onValueChange = { text ->
+                weightText = text
                 val weight = text.toDoubleOrNull()
                 onUpdate(set.copy(weight = weight))
             },
-            modifier = Modifier.width(64.dp),
+            modifier = Modifier
+                .width(64.dp)
+                .testTag("weight_${set.id}"),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
             singleLine = true,
             textStyle = MaterialTheme.typography.bodySmall.copy(textAlign = TextAlign.Center),
         )
 
-        // Reps input
+        // Reps input — local state for responsive typing, synced to DB
+        var repsText by remember(set.id) {
+            mutableStateOf(set.reps?.toString() ?: "")
+        }
         OutlinedTextField(
-            value = set.reps?.toString() ?: "",
+            value = repsText,
             onValueChange = { text ->
+                repsText = text
                 val reps = text.toIntOrNull()
                 onUpdate(set.copy(reps = reps))
             },
-            modifier = Modifier.width(64.dp),
+            modifier = Modifier
+                .width(64.dp)
+                .testTag("reps_${set.id}"),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             singleLine = true,
             textStyle = MaterialTheme.typography.bodySmall.copy(textAlign = TextAlign.Center),

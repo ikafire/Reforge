@@ -18,6 +18,7 @@ import io.mockk.slot
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.resetMain
@@ -104,6 +105,7 @@ class WorkoutViewModelTest {
         coEvery { workoutRepository.getWorkoutSets(any()) } returns flowOf(emptyList())
 
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         val exercises = listOf(makeExercise(id = "ex1"), makeExercise(id = "ex2"))
@@ -123,15 +125,18 @@ class WorkoutViewModelTest {
     @Test
     fun `addSet pre-fills weight from last set`() = runTest {
         val workout = Workout(id = "w1", startedAt = Clock.System.now(), isActive = true)
+        val we = WorkoutExercise(id = "we1", workoutId = "w1", exerciseId = "ex1", sortOrder = 0)
         coEvery { workoutRepository.getActiveWorkout() } returns flowOf(workout)
+        coEvery { workoutRepository.getWorkoutExercises("w1") } returns flowOf(listOf(we))
+        coEvery { exerciseRepository.getExerciseById("ex1") } returns flowOf(makeExercise(id = "ex1"))
         coEvery { workoutRepository.getWorkoutSets("we1") } returns flowOf(
             listOf(
                 WorkoutSet(id = "s1", workoutExerciseId = "we1", sortOrder = 0, weight = 80.0),
             )
         )
-        coEvery { workoutRepository.getWorkoutExercises(any()) } returns flowOf(emptyList())
 
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.addSet("we1")
@@ -153,12 +158,6 @@ class WorkoutViewModelTest {
             )
         )
         val set = WorkoutSet(id = "s1", workoutExerciseId = "we1", sortOrder = 0, weight = 100.0)
-        val weDetail = WorkoutExerciseWithDetails(
-            workoutExercise = WorkoutExercise(id = "we1", workoutId = "w1", exerciseId = "ex1", sortOrder = 0),
-            exercise = exercise,
-            sets = listOf(set),
-            previousSets = emptyList(),
-        )
 
         val workout = Workout(id = "w1", startedAt = Clock.System.now(), isActive = true)
         coEvery { workoutRepository.getActiveWorkout() } returns flowOf(workout)
@@ -169,6 +168,7 @@ class WorkoutViewModelTest {
         coEvery { workoutRepository.getWorkoutSets("we1") } returns flowOf(listOf(set))
 
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.completeSet(set)
@@ -236,6 +236,7 @@ class WorkoutViewModelTest {
         coEvery { workoutRepository.getWorkoutSets("we1") } returns flowOf(listOf(completedSet, incompleteSet))
 
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.finishWorkout(discardIncomplete = true)
@@ -254,6 +255,7 @@ class WorkoutViewModelTest {
         coEvery { workoutRepository.getWorkoutExercises(any()) } returns flowOf(emptyList())
 
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.discardWorkout()
@@ -267,6 +269,7 @@ class WorkoutViewModelTest {
     fun `showDiscardDialog and hideDiscardDialog toggle state`() = runTest {
         coEvery { workoutRepository.getActiveWorkout() } returns flowOf(null)
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.showDiscardDialog()
@@ -290,6 +293,7 @@ class WorkoutViewModelTest {
         coEvery { workoutRepository.getWorkoutSets(any()) } returns flowOf(emptyList())
 
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.reorderExercise(0, 1)
@@ -321,6 +325,7 @@ class WorkoutViewModelTest {
         coEvery { workoutRepository.getWorkoutExercises(any()) } returns flowOf(emptyList())
 
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.updateWorkoutNotes("Felt strong today")
@@ -339,6 +344,7 @@ class WorkoutViewModelTest {
         coEvery { workoutRepository.getWorkoutExercises(any()) } returns flowOf(emptyList())
 
         val vm = createViewModel()
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.updateWorkoutNotes("   ")

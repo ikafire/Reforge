@@ -15,6 +15,9 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import kotlinx.datetime.Clock
@@ -84,19 +87,30 @@ class WorkoutViewModel @Inject constructor(
 
     private fun loadExercises(workoutId: String) {
         viewModelScope.launch {
-            workoutRepository.getWorkoutExercises(workoutId).collect { workoutExercises ->
-                val details = workoutExercises.map { we ->
-                    val exercise = exerciseRepository.getExerciseById(we.exerciseId).first()
-                    val sets = workoutRepository.getWorkoutSets(we.id).first()
-                    WorkoutExerciseWithDetails(
-                        workoutExercise = we,
-                        exercise = exercise,
-                        sets = sets,
-                        previousSets = emptyList(),
-                    )
+            workoutRepository.getWorkoutExercises(workoutId)
+                .flatMapLatest { workoutExercises ->
+                    if (workoutExercises.isEmpty()) {
+                        flowOf(emptyList())
+                    } else {
+                        val setFlows = workoutExercises.map { we ->
+                            workoutRepository.getWorkoutSets(we.id).map { sets -> we to sets }
+                        }
+                        combine(setFlows) { pairs ->
+                            pairs.map { (we, sets) ->
+                                val exercise = exerciseRepository.getExerciseById(we.exerciseId).first()
+                                WorkoutExerciseWithDetails(
+                                    workoutExercise = we,
+                                    exercise = exercise,
+                                    sets = sets,
+                                    previousSets = emptyList(),
+                                )
+                            }
+                        }
+                    }
                 }
-                _exerciseDetails.value = details
-            }
+                .collect { details ->
+                    _exerciseDetails.value = details
+                }
         }
     }
 
