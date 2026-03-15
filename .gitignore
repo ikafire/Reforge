@@ -25,7 +25,8 @@ local.properties
 Thumbs.db
 
 # Claude Code
-.claude/
+.claude/worktrees/
+.claude/settings.local.json
 
 # Secrets
 *.jks

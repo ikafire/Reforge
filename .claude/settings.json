@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew:*)",
+      "Bash(java:*)",
+      "Bash(javac:*)",
+      "Bash(apkanalyzer:*)",
+      "Bash(avdmanager:*)",
+      "Bash(lint:*)",
+      "Bash(profgen:*)",
+      "Bash(resourceshrinker:*)",
+      "Bash(retrace:*)",
+      "Bash(screenshot2:*)",
+      "Bash(sdkmanager:*)"
+    ]
+  }
+}
