@@ -10,6 +10,7 @@ import io.mockk.mockk
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.resetMain
@@ -68,6 +69,7 @@ class ExerciseListViewModelTest {
         every { exerciseRepository.getAllExercisesWithUsageCount() } returns flowOf(exercises)
 
         val vm = ExerciseListViewModel(exerciseRepository)
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         val state = vm.uiState.value
@@ -89,6 +91,7 @@ class ExerciseListViewModelTest {
         every { exerciseRepository.getAllExercisesWithUsageCount() } returns flowOf(exercises)
 
         val vm = ExerciseListViewModel(exerciseRepository)
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.onSearchQueryChange("bench")
@@ -109,6 +112,7 @@ class ExerciseListViewModelTest {
         every { exerciseRepository.getAllExercisesWithUsageCount() } returns flowOf(exercises)
 
         val vm = ExerciseListViewModel(exerciseRepository)
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.onCategorySelected(ExerciseCategory.DUMBBELL)
@@ -129,6 +133,7 @@ class ExerciseListViewModelTest {
         every { exerciseRepository.getAllExercisesWithUsageCount() } returns flowOf(exercises)
 
         val vm = ExerciseListViewModel(exerciseRepository)
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.onMuscleSelected(MuscleGroup.TRICEPS)
@@ -148,6 +153,7 @@ class ExerciseListViewModelTest {
         every { exerciseRepository.getAllExercisesWithUsageCount() } returns flowOf(exercises)
 
         val vm = ExerciseListViewModel(exerciseRepository)
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.onSearchQueryChange("bench")
@@ -168,6 +174,7 @@ class ExerciseListViewModelTest {
         every { exerciseRepository.getAllExercisesWithUsageCount() } returns flowOf(exercises)
 
         val vm = ExerciseListViewModel(exerciseRepository)
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         vm.onCategorySelected(ExerciseCategory.BARBELL)
@@ -187,6 +194,7 @@ class ExerciseListViewModelTest {
         every { exerciseRepository.getAllExercisesWithUsageCount() } returns flowOf(exercises)
 
         val vm = ExerciseListViewModel(exerciseRepository)
+        backgroundScope.launch(testDispatcher) { vm.uiState.collect {} }
         advanceUntilIdle()
 
         val groups = vm.uiState.value.groupedExercises
