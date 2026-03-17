@@ -137,6 +137,7 @@ class ExerciseListScreenTest {
         }
 
         composeTestRule.onNodeWithText("Equipment").performClick()
+        composeTestRule.waitForIdle()
         composeTestRule.onNodeWithText("Barbell").assertIsDisplayed()
         composeTestRule.onNodeWithText("Dumbbell").assertIsDisplayed()
         composeTestRule.onNodeWithText("Cable").assertIsDisplayed()
@@ -156,6 +157,7 @@ class ExerciseListScreenTest {
         }
 
         composeTestRule.onNodeWithText("Muscle").performClick()
+        composeTestRule.waitForIdle()
         composeTestRule.onNodeWithText("Chest").assertIsDisplayed()
         composeTestRule.onNodeWithText("Back").assertIsDisplayed()
         composeTestRule.onNodeWithText("Shoulders").assertIsDisplayed()
@@ -187,6 +189,7 @@ class ExerciseListScreenTest {
         }
 
         composeTestRule.onNodeWithContentDescription("Search").performClick()
+        composeTestRule.waitForIdle()
         composeTestRule.onNodeWithText("Search exercises...").assertIsDisplayed()
         composeTestRule.onNodeWithContentDescription("Clear search").assertIsDisplayed()
     }
