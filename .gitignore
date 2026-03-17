@@ -31,5 +31,6 @@ Thumbs.db
 # Secrets
 *.jks
 *.keystore
+keystore.properties
 google-services.json
 .reference_data
